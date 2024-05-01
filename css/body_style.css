@@ -1,0 +1,92 @@
+
+
+/* Color Theme Swatches in RGBA */
+:root {
+    --Illustration-1-rgba: rgba(110, 72, 191, 1);
+    --Illustration-2-rgba: rgba(111, 114, 2, 1); 
+    --Illustration-3-rgba: rgba(242, 202, 4, 1); 
+    --Illustration-4-rgba: rgba(242, 135, 4, 1); 
+    --Illustration-5-rgba: rgba(242, 80, 21, 1); 
+}
+
+.body{
+    font-family: "Butterfly Kids", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.flex-main-content {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+  
+}
+
+.flex-header-menu, .flex-side-menu, .flex-footer-menu {
+   flex-shrink: 0;
+   background-color:var(--Illustration-1-rgba);
+   color:white;
+   padding: 0px 4px 0px 4px;
+}
+
+/* mobile */
+@media screen and (max-width: 769px) {
+    .flex-header-menu {
+        display: none;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .flex-footer-menu {
+        display: block;
+    }
+
+    .flex-main-content {
+        width:75vw;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1195px) {
+    .flex-header-menu {
+        display: block;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .flex-footer-menu {
+        display: none;
+    }
+
+}
+
+/* tablet and phone on landscape */
+@media screen and (min-width: 601px) and (max-width: 1194px) {
+    .flex-header-menu {
+        display: none;
+    }
+
+    .flex-side-menu {
+        display: block;
+    }
+
+    .flex-footer-menu {
+        display: none;
+    }
+}
