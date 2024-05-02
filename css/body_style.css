@@ -21,6 +21,9 @@ body{
     font-style: normal;
 } 
 
+/* h1{
+    background-color: blue;
+} */
 
 html, body {
     margin:0;
@@ -31,6 +34,7 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100vw; /* This should cover the full viewport width */
     
 }
 
@@ -90,12 +94,63 @@ html, body {
     width: 100vw; /* Adjusted to fill the full width of the viewport */
 }
 
-.flex-main-content > div {
-    width: 33.33%; /* Equal width for each section if you have three divs */
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-    padding: 20px; /* Example padding */
+
+
+
+/* Create grid system - 12 columns */
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /*create 12 propertional column */
+    grid-auto-rows: minmax(10vh,auto);/* auto genreates rows of minimum height to be 10% but will expand to content */
+    gap: 16px; /* gap between columns - best in absolute value */
+    margin: 2vh 2vw; /* add space on all sides but poroprtional to the screen size */
 }
 
+.col-1 {grid-column: span 1;}
+.col-2 {grid-column: span 2;}
+.col-3 {grid-column: span 3;}
+.col-4 {grid-column: span 4;}
+.col-5 {grid-column: span 5;}
+.col-6 {grid-column: span 6;}
+.col-7 {grid-column: span 7;}
+.col-8 {grid-column: span 8;}
+.col-9 {grid-column: span 9;}
+.col-10 {grid-column: span 10;}
+.col-11 {grid-column: span 11;}
+.col-12 {grid-column: span 12;}
+
+
+.container {
+    flex-direction: column;
+}
+
+
+.card {
+    border: 1px solid var(--dark2);
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px var(--midgrey);
+}
+
+/* card header is text */
+.card-header {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.card-banner-image {
+    display: block;
+    margin:auto;
+    width: 80%;
+    height: 30vh;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+/* card-body-text is text */
+.card-body-text {
+    color: white
+}
 
 
 /* mobile */
@@ -131,6 +186,8 @@ html, body {
         display: none;
     }
 
+    
+
 }
 
 /* tablet and phone on landscape */
@@ -146,4 +203,6 @@ html, body {
     .flex-footer-menu {
         display: none;
     }
+
+    
 }
