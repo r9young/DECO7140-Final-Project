@@ -1,0 +1,72 @@
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 100vw;       /* Width to cover the full viewport width */
+}
+
+
+
+.flex-container-row-body {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vh;  
+    width: 100vw;
+}
+
+.flex-container-row-body > div:first-child {
+    flex-grow: 2;       /* Takes up 2 parts of the available space */
+    flex-basis: 30%;    /* Starts at 40% of the parent's width */
+
+}
+
+.flex-container-row-body > div:last-child {
+    flex-grow: 1;       /* Takes up 2 parts of the available space */
+    flex-basis: 70%;    /* Starts at 40% of the parent's width */
+    
+}
+
+.flex-container-1strow {
+    display: flex;
+    flex-direction: row;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 100vw;       /* Width to cover the full viewport width */
+}
+
+.flex-container-1strow > div:first-child {
+    flex-grow: 1;       /* Takes up 2 parts of the available space */
+    flex-basis: 50%;    /* Starts at 40% of the parent's width */
+}
+
+.flex-container-1strow > div:last-child {
+    flex-grow: 1;       /* Takes up 1 part of the available space */
+    flex-basis: 50%;    /* Starts at 60% of the parent's width */
+}
+
+
+.flex-container-1strow-left {
+    display: flex;
+    flex-direction: row;
+    /* min-height: 100vh;  /*Minimum height to cover the full viewport height */
+    width: 50vw;       /* Width to cover the full viewport width */
+    
+}
+
+.flex-container-1strow-left > div:first-child {
+    flex-grow: 3;       /* Takes up 2 parts of the available space */
+    flex-basis: 70%;    /* Starts at 40% of the parent's width */
+}
+
+.flex-container-1strow-left > div:last-child {
+    flex-grow: 1;       /* Takes up 1 part of the available space */
+    flex-basis: 60%;    /* Starts at 60% of the parent's width */
+}
+
+.flex-container-2ndrow{
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;  /* Minimum height to cover the full viewport height */
+    width: 50vw;   
+}
+

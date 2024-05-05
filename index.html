@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Game Beyong Screen</title>
         <link rel="stylesheet" href="css/body_style.css">
+        <link rel="stylesheet" href="css/form_style.css">
 
         <!-- butterfly kids -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            .custom-background {
+                background-image: url('img/image_1.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 20px;
+            }
+
+        </style>
 
     </head>
     <body>
@@ -41,10 +53,6 @@
                 </div>
                 
                 <div class="col-6">
-                    <head>
-                        <!-- <h1 class="header">Popular Games</h1> -->
-                    </head>
-                    
                     <div class="grid-row">
                         <div class="col-6">
                             <div class="container">
@@ -77,18 +85,25 @@
                     </div>
                 </div>
                 <div class="col-2">
-                    <p>Calender</p>
+                    <form id="subscribe-form">
+                        <h5>Stay Ahead of the Game: Subscribe to Our Newsletter!</h5>
+                        <p>Unlock the world of engaging and enriching games beyond the screen by subscribing to our newsletter.</p>
+
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                        <label for="suburb">Suburb:</label>
+                        <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="submit" value="Subscribe">
+                    </form>
                     
                 </div>  
             </section>
-
-            <section class="grid-row">
-                <p>test</p>
-            </section>
-
             <footer class="flex-footer-menu">
                     <p>footer</p>
             </footer>
         </div>
     </body>
+    <script src="js/weather_api.js"></script>
 </html>
