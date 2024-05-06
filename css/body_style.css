@@ -17,6 +17,7 @@ body{
     font-weight: 400;
     font-style: normal;
     background-color: rgb(230, 206, 230);
+    
 } 
 
 
@@ -26,11 +27,11 @@ html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 }
 
 .header {
-    
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -41,12 +42,15 @@ html, body {
 }
 
 
-/* flexbox */
+.firstrow-text {
+    width: 100%;      /* Sets the width of the div to take 100% of its parent container's width */
+    max-width: 800px; /* Ensures the div does not exceed 800px in width */
+    min-height: 400px; /* Ensures the div has at least 400px in height, expanding as needed based on content */
+    margin: 0 auto;   /* Centers the div within its parent container */
+    padding: 20px;    /* Adds space inside the div around the content */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 
-
-
-
-
+}
 
 
 .brand {
@@ -65,158 +69,10 @@ html, body {
     grid-column: 3 / span 2;
     grid-row: 1;
     text-align: center;
-    background-color: purple;
+    background-color: rgb(230, 206, 230);
     padding: 10px;
 }
 
-.menu-button {
-    font-size: 20px;
-    color: white;
-    background: purple;
-    padding: 2px 20px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    
-}
 
 
-.flex-header-menu, .flex-side-menu, .flex-footer-menu {
-    flex-shrink: 0;
-    background-color:var(--Illustration-1-rgba);
-    color:white;
-    padding: 0px 4px 0px 4px;
- }
- 
 
- .flex-main-content {
-    background-image: url('img/main.jpg'); /* Path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    margin: 0;
-    width: 100vw; /* Adjusted to fill the full width of the viewport */
-}
-
-
-/* Create grid system - 12 columns */
-.grid-row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /*create 12 propertional column */
-    grid-auto-rows: minmax(10vh,auto);/* auto genreates rows of minimum height to be 10% but will expand to content */
-    gap: 16px; /* gap between columns - best in absolute value */
-    margin: 2vh 2vw; /* add space on all sides but poroprtional to the screen size */
-}
-
-.col-1 {grid-column: span 1;}
-.col-2 {grid-column: span 2;}
-.col-3 {grid-column: span 3;}
-.col-4 {grid-column: span 4;}
-.col-5 {grid-column: span 5;}
-.col-6 {grid-column: span 6;}
-.col-7 {grid-column: span 7;}
-.col-8 {grid-column: span 8;}
-.col-9 {grid-column: span 9;}
-.col-10 {grid-column: span 10;}
-.col-11 {grid-column: span 11;}
-.col-12 {grid-column: span 12;}
-
-
-.container {
-    flex-direction: row;
-}
-
-
-.card {
-    border: 1px solid var(--dark2);
-    border-radius: 10px;
-    box-shadow: 5px 10px 50px var(--midgrey);
-    
-}
-
-/* card header is text */
-.card-header {
-    color: black;
-    font-weight: 600;
-    font-size: larger;
-    text-align: center;
-    font-size: 25px;
-}
-
-.card-banner-image {
-    display: block;
-    margin:auto;
-    width: 80%;
-    height: 25vh;
-    object-fit:cover;
-    border-radius: 10px;
-}
-
-/* card-body-text is text */
-.card-body-text {
-    color: black
-}
-
-
-/* mobile */
-@media screen and (max-width: 769px) {
-    .flex-header-menu {
-        display: none;
-    }
-
-    .flex-side-menu {
-        display: none;
-    }
-
-    .flex-footer-menu {
-        display: block;
-    }
-
-    .flex-main-content {
-        width:75vw;
-    }
-}
-
-/* desktop */
-@media screen and (min-width: 1195px) {
-    .flex-header-menu {
-        display: block;
-    }
-
-    .flex-side-menu {
-        display: none;
-    }
-
-    .flex-footer-menu {
-        display: none;
-    }
-
-    
-
-}
-
-/* tablet and phone on landscape */
-@media screen and (min-width: 601px) and (max-width: 1194px) {
-    .flex-header-menu {
-        display: none;
-    }
-
-    .flex-side-menu {
-        display: block;
-    }
-
-    .flex-footer-menu {
-        display: none;
-    }
-
-    
-}

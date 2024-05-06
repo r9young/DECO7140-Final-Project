@@ -1,0 +1,35 @@
+
+
+.page-links {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    text-align: right;
+    padding: 10px;
+    display: grid;
+    gap: 10px; /* Adjust the space between buttons */
+    
+}
+
+.menu-button {
+    font-size: 20px;
+    color: white;
+    background: purple;
+    padding: 2px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    margin-right: 10px; /* Adds space to the right of each button */
+    width: 120px;
+
+}
+
+.menu-button:last-child {
+    margin-right: 0; /* Removes the right margin from the last button */
+}
+
+
+
+.page-links {
+    display:grid;
+
+}

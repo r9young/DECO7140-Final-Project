@@ -6,6 +6,9 @@
         <title>Game Beyong Screen</title>
         <link rel="stylesheet" href="css/body_style.css">
         <link rel="stylesheet" href="css/form_style.css">
+        <link rel="stylesheet" href="css/flex_box.css">
+        <link rel="stylesheet" href="css/card_style.css">
+        <link rel="stylesheet" href="css/manual_style.css">
 
         <!-- butterfly kids -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,92 +21,100 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <style>
-            .custom-background {
-                background-image: url('img/image_1.png');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 20px;
-            }
-
-        </style>
+       
 
     </head>
     <body>
-        <div class="flex-container-column">
-            <div>
-                <div class="brand">Game Beyong Screen</div>
-                <div class="page-link">
-                    <button class="menu-button">Games</button>
-                    <button class="menu-button">Register</button>
-                    <button class="menu-button">About</button>
-                </div>
-            </div>  
+        <head>
+            <div class="brand">Game Beyong Screen</div>
+        </head>
             
-            <!-- main content -->
-            
-            <section class="grid-row">
-                
-                <div class="col-2">
-                    <h1 class="poppins-regular">Welcome to Game Beyond Screen</h1>
-                    <p class="poppins-regular ">Embark on a journey where fun transcends pixels and screens. At Game Beyond Screen, we celebrate the sheer joy of play in its most tangible forms. Dive into a world of board games, outdoor adventures, puzzles, and more, all designed to engage your mind, energize your body, and enhance your social interactions.</p>
-                    <p class="poppins-regular ">From strategic challenges that test your mental acuity to physical activities that get your heart racing, Game Beyond Screen is your portal to rediscovering the essence of play. Explore our extensive collection of games, participate in community events, and connect with fellow enthusiasts eager to share their love for classic and innovative games alike.</p>
-                    <p class="poppins-regular ">Whether you're looking for a tranquil afternoon with a puzzle, a competitive board game night, or an exhilarating outdoor game, Game Beyond Screen offers it all. Join us to break away from digital screens and celebrate the diversity of games that enrich our lives.</p>
-                </div>
-                
-                <div class="col-6">
-                    <div class="grid-row">
-                        <div class="col-6">
-                            <div class="container">
-                                <div class="card">
-                                    <h2 class="card-header">Frisbee</h2>
-                                    <img class="card-banner-image" src="img/image_4.png" alt="image">
-                                    <p class="card-body-text"></p> 
-                                </div>
-                                <div class="card">
-                                    <h2 class="card-header">Cornhole</h2>
-                                    <img class="card-banner-image" src="img/image_2.png" alt="image">
-                                    <p class="card-body-text"></p> 
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="col-6">
-                            <div class="container">
-                                <div class="card">
-                                    <h2 class="card-header">Hopscotch</h2>
-                                    <img class="card-banner-image" src="img/image_1.png" alt="image">
-                                    <p class="card-body-text"></p> 
-                                </div>
-                                <div class="card">
-                                    <h2 class="card-header">Kite Flying</h2>
-                                    <img class="card-banner-image" src="img/image_3.png" alt="image">
-                                    <p class="card-body-text"></p> 
-                                </div>
-                            </div>
+        <div class="flex-body-column">
+            <div class="flex-first-row">
+                <header class="flex-header-menu header-menu" aria-label="Main menu">
+    
+                    <aside class="flex-side-menu" aria-label="Main menu">
+                        <div class="page-links">
+                            <button class="menu-button">Home</button>
+                            <button class="menu-button">Games</button>
+                            <button class="menu-button">Purchase</button>
+                            <button class="menu-button">Subscrip</button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <form id="subscribe-form">
-                        <h5>Stay Ahead of the Game: Subscribe to Our Newsletter!</h5>
-                        <p>Unlock the world of engaging and enriching games beyond the screen by subscribing to our newsletter.</p>
+                    </aside>
 
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
-                        <label for="suburb">Suburb:</label>
-                        <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        <input type="submit" value="Subscribe">
-                    </form>
+                </header>   
+                <div>
+                    <h1 class="poppins-regular">Welcome to Game Beyond Screen</h1>
+                    <p>Embark on a journey where fun transcends pixels and screens. At Game Beyond Screen, we celebrate the sheer joy of play in its most tangible forms. Dive into a world of board games, outdoor adventures, puzzles, and more, all designed to engage your mind, energize your body, and enhance your social interactions.</p>
+                    <p>From strategic challenges that test your mental acuity to physical activities that get your heart racing, Game Beyond Screen is your portal to rediscovering the essence of play. Explore our extensive collection of games, participate in community events, and connect with fellow enthusiasts eager to share their love for classic and innovative games alike.</p>
+                    <p>Whether you're looking for a tranquil afternoon with a puzzle, a competitive board game night, or an exhilarating outdoor game, Game Beyond Screen offers it all. Join us to break away from digital screens and celebrate the diversity of games that enrich our lives.</p>
+                </div>
+                <div class="about-container">
+                    <h4>Current Weather</h4>
+                    <p>Temperature</p>
+                    <p id="today_temperature">??</p>
+                    <!-- <p>Wind Spead</p>
+                    <p id="current_wind_speed">??</p> -->
+                </div>
+                
+            </div>  
+
+            <div class="flex-container-row">
+                <div class="card">
+                    <h2 class="card-header">Hopscotch</h2>
+                    <img class="card-banner-image" src="img/image_1.png" alt="image">
+                    <p class="card-body-text"></p> 
+                </div>
+                <div class="card">
+                    <h2 class="card-header">Kite Flying</h2>
+                    <img class="card-banner-image" src="img/image_5.png" alt="image">
+                    <p class="card-body-text"></p> 
+                </div>
+                <div class="card">
+                    <h2 class="card-header">Kite Flying</h2>
+                    <img class="card-banner-image" src="img/image_4.png" alt="image">
+                    <p class="card-body-text"></p> 
+                </div>
+            </div>
+    
+                <div class="flex-container-column">
+                    <div class="flex-container-row">
+                        <div>
+                            <h1>Story from Mrs. Lee - a retired schoolteacher </h1>
+                            <img src="img/image_4.png" alt="image">
+                        </div>
+
+                        <div>
+                            <form id="subscribe-form">
+                                <h5>Stay Ahead of the Game: Subscribe to Our Newsletter!</h5>
+                                <p>Unlock the world of engaging and enriching games beyond the screen by subscribing to our newsletter.</p>
                     
-                </div>  
-            </section>
-            <footer class="flex-footer-menu">
-                    <p>footer</p>
-            </footer>
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                                <label for="suburb">Suburb:</label>
+                                <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <input type="submit" value="Subscribe">
+                            </form>   
+                        </div> 
+                    </div>  
+                    <div>
+                        <p>In the quiet town of Greenwood, where children usually stayed indoors, glued to their screens, a surprising challenge was brewing. It all started with Mrs. Lee, a retired schoolteacher who noticed that her grandchildren were spending more and more time isolated, playing video games.</p>
+                        <p>One sunny afternoon, she invited her grandchildren, along with their friends, to try out an old game from her childhood—hopscotch. Initially skeptical, the kids were soon intrigued by the colorful chalk designs she drew on the sidewalk. Mrs. Lee explained the rules, and before long, they were eagerly tossing stones and hopping on one foot.</p>
+                        <p>The physical nature of hopscotch, combined with the laughter and camaraderie it brought, was a stark contrast to the solitary hours spent in front of screens. The children began to enjoy the fresh air and the joy of playing together. As they played, Mrs. Lee subtly incorporated challenges that required teamwork and strategic thinking, skills they usually exercised in video games but now found in a real-world setting.</p>
+                        <p>Word of this fun, engaging game spread through the neighborhood. Soon, parents were encouraging their children to join Mrs. Lee's hopscotch games instead of spending afternoons indoors. Every weekend, the sidewalks of Greenwood blossomed with colorful hopscotch grids, each more intricate than the last.</p>
+                    </div>
+                       
+
+                </div> 
+
+            </div>
+            
         </div>
     </body>
+    <script src="js/current_weather_api.js"></script>'
     <script src="js/weather_api.js"></script>
+
+
 </html>

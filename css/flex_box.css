@@ -1,10 +1,37 @@
 
-.flex-container-column {
+.flex-body-column {
     display: flex;
     flex-direction: column;
     /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
     width: 100vw;       /* Width to cover the full viewport width */
 }
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 100vw;       /* Width to cover the full viewport width */
+}
+
+/* first row of body */
+.flex-first-row {
+    display: flex;
+    flex-direction: row; /* Ensures the items are laid out in a row */
+    padding: 40px; /* Adds space around the items */
+}
+
+.flex-first-row > div:first-child { /* Targeting the first child */
+    flex: 2; /* Gives the first div 20% of the space, assuming the total flex basis is 10 */
+}
+
+.flex-first-row > div:nth-child(2) { /* Targeting the second child */
+    flex: 6; /* Gives the second div 30% of the space */
+}
+
+.flex-first-row > div:last-child { /* Targeting the third child */
+    flex: 2; /* Gives the last div 50% of the space */
+}
+
 
 
 
@@ -37,20 +64,22 @@
 .flex-container-1strow > div:first-child {
     flex-grow: 1;       /* Takes up 2 parts of the available space */
     flex-basis: 50%;    /* Starts at 40% of the parent's width */
+    width: 100vw;
 }
 
 .flex-container-1strow > div:last-child {
     flex-grow: 1;       /* Takes up 1 part of the available space */
-    flex-basis: 50%;    /* Starts at 60% of the parent's width */
+    flex-basis: 10%;    /* Starts at 60% of the parent's width */
+    width: 10vw;
 }
 
 
 .flex-container-1strow-left {
     display: flex;
     flex-direction: row;
+    /* flex-flow: row wrap; */
     /* min-height: 100vh;  /*Minimum height to cover the full viewport height */
-    width: 50vw;       /* Width to cover the full viewport width */
-    
+
 }
 
 .flex-container-1strow-left > div:first-child {
@@ -63,10 +92,11 @@
     flex-basis: 60%;    /* Starts at 60% of the parent's width */
 }
 
-.flex-container-2ndrow{
+.flex-container-row {
     display: flex;
     flex-direction: row;
-    min-height: 50vh;  /* Minimum height to cover the full viewport height */
-    width: 50vw;   
+    min-height: 60vh;  /* Minimum height to cover the full viewport height */
+    /* width: 60vw; */
+    /* width: 60vw;   bug-3*/
 }
 

@@ -1,0 +1,32 @@
+
+.card {
+    border: 1px solid var(--dark2);
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px var(--midgrey);
+}
+
+/* card header is text */
+.card-header {
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-banner-image {
+    display: block;
+    margin:auto;
+    width: 80%;
+    height: 25vh;
+    object-fit:cover;
+    border-radius: 10px;
+    
+    
+
+}
+
+/* card-body-text is text */
+.card-body-text {
+    color: black
+}
