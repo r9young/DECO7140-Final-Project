@@ -14,24 +14,86 @@
 }
 
 /* first row of body */
+/* --------------------------------------------- */
 .flex-first-row {
     display: flex;
     flex-direction: row; /* Ensures the items are laid out in a row */
     padding: 40px; /* Adds space around the items */
+   
 }
 
 .flex-first-row > div:first-child { /* Targeting the first child */
-    flex: 2; /* Gives the first div 20% of the space, assuming the total flex basis is 10 */
+    flex: 2; 
+    text-align: right; 
+    margin-left: 40px;
+
 }
 
 .flex-first-row > div:nth-child(2) { /* Targeting the second child */
-    flex: 6; /* Gives the second div 30% of the space */
+    flex:6;
+    text-align: left; 
+   
 }
 
 .flex-first-row > div:last-child { /* Targeting the third child */
-    flex: 2; /* Gives the last div 50% of the space */
+    flex:2;
+    text-align: right; 
+
 }
 
+.first-row-text{
+
+    width: 100%;      /* Sets the width of the div to take 100% of its parent container's width */
+    max-width: auto; /* Ensures the div does not exceed 800px in width */
+    min-height: auto; /* Ensures the div has at least 400px in height, expanding as needed based on content */
+    margin: 0 auto;   /* Centers the div within its parent container */
+    padding: 40px;    /* Adds space inside the div around the content */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-size: 60px;
+    font-display: bold;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.first-row-image {
+    width: 100%;      /* Sets the width of the div to take 100% of its parent container's width */
+    max-width: 800px; /* Ensures the div does not exceed 800px in width */
+    min-height: 400px; /* Ensures the div has at least 400px in height, expanding as needed based on content */
+    margin: 0 auto;   /* Centers the div within its parent container */
+    padding: 40px;    /* Adds space inside the div around the content */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+
+}
+
+
+/* --------------------------------------------- */
+
+
+.flex-second-row {
+    display: flex;
+    flex-direction: row;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 70vw;       /* Width to cover the full viewport width */
+}
+
+
+.flex-second-row > div:first-child {
+    flex: 8;
+
+}
+
+.flex-second-row > div:last-child {
+    flex: 2;
+
+}
+
+.flex-second-row-main {
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-direction: row;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 100vw;       /* Width to cover the full viewport width */
+}
 
 
 
@@ -92,11 +154,4 @@
     flex-basis: 60%;    /* Starts at 60% of the parent's width */
 }
 
-.flex-container-row {
-    display: flex;
-    flex-direction: row;
-    min-height: 60vh;  /* Minimum height to cover the full viewport height */
-    /* width: 60vw; */
-    /* width: 60vw;   bug-3*/
-}
 

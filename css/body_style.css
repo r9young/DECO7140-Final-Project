@@ -17,6 +17,8 @@ body{
     font-weight: 400;
     font-style: normal;
     background-color: rgb(230, 206, 230);
+    padding: 40px;
+    margin: 40px;
     
 } 
 
@@ -72,6 +74,8 @@ html, body {
     background-color: rgb(230, 206, 230);
     padding: 10px;
 }
+
+
 
 
 

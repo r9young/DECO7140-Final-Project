@@ -1,4 +1,19 @@
 
+.flex-side-menu {
+    width: 100%;
+    padding: 10px;
+    background: rgb(229, 179, 229);
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 .page-links {
     grid-column: 3 / span 2;
@@ -6,12 +21,12 @@
     text-align: right;
     padding: 10px;
     display: grid;
-    gap: 10px; /* Adjust the space between buttons */
+    gap: 40px; /* Adjust the space between buttons */
     
 }
 
 .menu-button {
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     background: purple;
     padding: 2px 20px;
@@ -19,15 +34,15 @@
     border-radius: 5px;
     border-color: white;
     margin-right: 10px; /* Adds space to the right of each button */
-    width: 120px;
+    margin-bottom: 40px;
+    width: 240px;
+    
 
 }
 
 .menu-button:last-child {
     margin-right: 0; /* Removes the right margin from the last button */
 }
-
-
 
 .page-links {
     display:flex;

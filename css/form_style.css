@@ -10,6 +10,8 @@
 }
 
 
+
+
 #subscribe-form {
     width: 90%;
     padding: 5%;
@@ -39,4 +41,19 @@
     background-repeat: no-repeat;
     padding: 10px;
     
+}
+
+.about-container {
+    display: flex;                 /* Enables flexbox for container layout */
+    flex-direction: column;        /* Makes the content flow vertically */
+    justify-content: center;       /* Centers content vertically */
+    align-items: center;           /* Centers content horizontally */
+    width: 100%;                   /* Makes container full-width */
+   
+    padding: 10px;
+    background: rgb(229, 179, 229);
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
