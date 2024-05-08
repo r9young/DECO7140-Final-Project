@@ -22,15 +22,14 @@
         width: 40vw;
     }
 
+    .div {
+        width: 40vw;
+    }
+
     .body {
         width: 40vw;
-        
     }
-
-
-    .img {
-        width: 40vw;
-    }
+   
 
     .flex-footer-menu {
         display: grid;/* applied, making it a grid container */
@@ -38,16 +37,19 @@
         justify-items: center;/* aligns items along the inline (row) axis */
         align-items: center; /* aligns items along the block (column) axis */
         padding: 2vh 5vw; /* applies to all sides of the element's content area: */
-        text-align: center /*centre aligns the icon and the text */
+        text-align: center; /*centre aligns the icon and the text */
+        
     }
 
     .flex-footer-menu img {
         width: 15vw;/* set the width of each icon to 15% of the screen */
         height: auto;
         min-width: 24px;
-        max-width: 50px
+        max-width: 50px;
+       
     }
 
+    
 }
 
 
