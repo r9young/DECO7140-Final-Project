@@ -75,7 +75,7 @@
 
 .flex-footer-menu {
     padding: 5px 10px; /* Adjusted padding for better appearance */
-    background: rgb(229, 179, 229);
+    background: purple;
     color: black;
     text-align: center;
     font-size: 14px; /* Adjust font size as needed */
@@ -98,4 +98,10 @@
     grid-row:1;
     gap: 10px; /* Adjust the space between buttons */
     
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none; /* removes underline */
+    font-weight: 600;
 }
