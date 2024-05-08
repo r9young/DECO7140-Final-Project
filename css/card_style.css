@@ -15,7 +15,7 @@
 }
 
 .card-banner-image {
-    display: block;
+    /* display: block; */
     margin:auto;
     width: 90%;
     height: 25vh;

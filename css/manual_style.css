@@ -17,23 +17,35 @@
 }
 
 .flex-header-menu {
-    padding: 1px 1px;
+    padding: 5px 10px; /* Adjusted padding for better appearance */
     background: rgb(229, 179, 229);
     color: black;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px; /* Adjust font size as needed */
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+    justify-items: center; /* Align items horizontally at the center of each column */
+    align-items: center; /* Center items vertically */
     margin-top: 10px;
-    width: 100%;
-    height: 100px;
-    
-
+    width: 100%; /* Full width of parent container */
 }
 
+
+.page-header-links {
+    grid-column: 2 / 3;
+    text-align: right;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row:1;
+    gap: 10px; /* Adjust the space between buttons */
+    
+}
+
+
+
 .page-links {
-    grid-column: 3 / span 2;
     grid-row: 1;
     text-align: right;
     padding: 10px;
@@ -43,6 +55,7 @@
 }
 
 .menu-button {
+    
     font-size: 15px;
     color: white;
     background: purple;
@@ -57,7 +70,32 @@
     margin-right: 0; /* Removes the right margin from the last button */
 }
 
-/* .page-links {
-    display:flex;
-    flex-direction: column;
-} */
+
+
+
+.flex-footer-menu {
+    padding: 5px 10px; /* Adjusted padding for better appearance */
+    background: rgb(229, 179, 229);
+    color: black;
+    text-align: center;
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-items: center; /* Align items horizontally at the center of each column */
+    align-items: center; /* Center items vertically */
+    margin-top: 10px;
+    width: 100%; /* Full width of parent container */
+}
+
+
+.page-footer-links {
+   grid-column: 2 / 3;
+    text-align: right;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row:1;
+    gap: 10px; /* Adjust the space between buttons */
+    
+}

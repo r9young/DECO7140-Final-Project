@@ -1,0 +1,88 @@
+
+
+@media screen and (max-width: 430px) {
+
+    .flex-header-bar {
+        display:none;
+    }
+    .flex-sider-bar {
+        display:none;
+    }
+
+    .flex-footer-bar{
+        display:block;
+    }
+    
+    .left-sider-bar {
+        display:none;
+    
+    }
+
+
+
+    .body {
+        width: 20vw;
+        
+    }
+
+
+    .img {
+        width: 20vw;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    /* We tell both sidebars to share a row */
+
+    .flex-header-bar {
+        display:block;
+    }
+    .flex-sider-bar {
+        display:none;
+    }
+
+    .flex-footer-bar{
+        display:none;
+    }
+
+    .bottom-bar {
+        display:block;
+    }
+
+    .left-sider-bar {
+        display:none;
+    
+    }
+
+    .body {
+        width: 70vw;
+    }
+
+    .img {
+        width: 70vw;
+    }
+
+}
+
+@media only screen and (min-width: 1195px) {
+    .flex-header-bar {
+        display:none;
+    }
+    .flex-sider-bar {
+        display:block;
+    }
+
+    .left-sider-bar {
+        display:block;
+    
+    }
+
+    .bottom-bar {
+        display:none;
+    }
+
+
+
+}

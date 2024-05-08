@@ -29,7 +29,7 @@
 }
 
 .flex-first-row > div:nth-child(2) { /* Targeting the second child */
-    flex:5;
+    flex:8;
     text-align: left; 
     /* margin-right: 50px; */
     padding: 10px 40px;    /* Adds padding inside the div */
@@ -38,9 +38,9 @@
 }
 
 .flex-first-row > div:last-child { /* Targeting the third child */
-    flex:4;
-    text-align: left; 
-    padding: 10px 20px;
+    flex:1;
+    text-align: right; 
+    /* padding: 10px; */
 
 }
 

@@ -21,6 +21,7 @@ body{
     margin: 40px;
     box-sizing: border-box;
     margin-bottom: 50px;
+
     
 } 
 
@@ -32,6 +33,7 @@ html, body {
     font-weight: 350;
     font-style: normal;
     margin-bottom: 30px;
+    
     
 }
 
@@ -51,22 +53,21 @@ html, body {
 
 
 .brand {
-    grid-column: 1 / span 2;
-    grid-row: 1;
     background-color: purple;
     padding: 10px;
     font-size: 40px;
     font-weight: bold;
     color: white;
     text-align: center;
+    
 
 }
 
 .flex-body-column {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap ;
     /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
-    width: 100vw;       /* Width to cover the full viewport width */
+          /* Width to cover the full viewport width */
     /* border-right: 2px solid purple; */
     /* border-left: 2px solid purple; */
 }
