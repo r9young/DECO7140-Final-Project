@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 530px) {
 
     .flex-header-bar {
         display:none;
@@ -18,18 +18,35 @@
     
     }
 
-    .header {
-        width: 40vw;
+    .flex-first-row {
+        margin-left:none;
+     
     }
 
-    .div {
-        width: 40vw;
+    .flex-second-row-main {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-right: 120px;
     }
 
-    .body {
-        width: 40vw;
+    .story-text {
+        width: 60vw;
+     
     }
+
+
+  
    
+    .first-row-text {
+        /* display: flex;
+        flex-direction: column; */
+        width: 70vw;
+        text-align: left;
+        margin-right: 120px;
+        /* margin-bottom: 5vw;
+        font-size: 10px; */
+    }
 
     .flex-footer-menu {
         display: grid;/* applied, making it a grid container */
@@ -38,6 +55,7 @@
         align-items: center; /* aligns items along the block (column) axis */
         padding: 2vh 5vw; /* applies to all sides of the element's content area: */
         text-align: center; /*centre aligns the icon and the text */
+       
         
     }
 
@@ -47,6 +65,22 @@
         min-width: 24px;
         max-width: 50px;
        
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper img {
+        width: 60vw;
+    }
+
+    .brand {
+        width: 100vw;
+    
     }
 
     
@@ -63,9 +97,11 @@
         display:none;
     }
 
-    .flex-footer-bar{
-        display:none;
-    }
+    /* .brand {
+        width: 70vw;
+    } */
+
+
 
     .bottom-bar {
         display:block;
@@ -76,28 +112,46 @@
     
     }
 
-    .body {
-        width: 70vw;
-    }
 
     .img {
         width: 70vw;
     }
 
-    .flex-footer-menu {
-        display: grid;/* applied, making it a grid container */
-        grid-template-columns: repeat(4, 1fr);/* creates 4 columns */
-        justify-items: center;/* aligns items along the inline (row) axis */
-        align-items: center; /* aligns items along the block (column) axis */
-        padding: 2vh 5vw; /* applies to all sides of the element's content area: */
-        text-align: center /*centre aligns the icon and the text */
+    .flex-footer-menu{
+        display:none;
     }
 
-    .flex-footer-menu img {
-        width: 15vw;/* set the width of each icon to 15% of the screen */
-        height: auto;
-        min-width: 24px;
-        max-width: 50px
+    .flex-first-row {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .flex-body-column {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    /* .flex-header-bar {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    
+    } */
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper img {
+        width: 60vw;
     }
 
 }
@@ -119,8 +173,8 @@
         display:none;
     }
 
-    .flex-footer-menu {
-        display: none;
+    .flex-footer-menu{
+        display:none;
     }
 
 

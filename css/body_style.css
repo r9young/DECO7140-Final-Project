@@ -12,27 +12,17 @@
 
 /* it is not used in current page */
 body{
-    font-family: "Butterfly Kids", cursive;
-    font-optical-sizing: auto; /*?*/
     font-weight: 100;
     font-style: normal;
     background-color: rgb(230, 206, 230);
-    padding: 40px;
-    margin: 40px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-
-    
 } 
 
 
 html, body {
-    margin:0;
-    padding:0;
+
     font-family: "Poppins", sans-serif;
     font-weight: 350;
-    font-style: normal;
-    margin-bottom: 30px;
+    justify-items: center;
     
     
 }
@@ -49,27 +39,19 @@ html, body {
 }
 
 
-
-
-
 .brand {
     background-color: purple;
-    padding: 10px;
     font-size: 40px;
     font-weight: bold;
     color: white;
     text-align: center;
-    
-
 }
 
 .flex-body-column {
     display: flex;
-    flex-wrap: wrap ;
-    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
-          /* Width to cover the full viewport width */
-    /* border-right: 2px solid purple; */
-    /* border-left: 2px solid purple; */
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; 
 }
 
 
