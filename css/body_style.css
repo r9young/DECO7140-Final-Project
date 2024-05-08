@@ -14,11 +14,13 @@
 body{
     font-family: "Butterfly Kids", cursive;
     font-optical-sizing: auto; /*?*/
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     background-color: rgb(230, 206, 230);
     padding: 40px;
     margin: 40px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
     
 } 
 
@@ -27,13 +29,14 @@ html, body {
     margin:0;
     padding:0;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
+    margin-bottom: 30px;
     
 }
 
 .header {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -44,15 +47,7 @@ html, body {
 }
 
 
-.firstrow-text {
-    width: 100%;      /* Sets the width of the div to take 100% of its parent container's width */
-    max-width: 800px; /* Ensures the div does not exceed 800px in width */
-    min-height: 400px; /* Ensures the div has at least 400px in height, expanding as needed based on content */
-    margin: 0 auto;   /* Centers the div within its parent container */
-    padding: 20px;    /* Adds space inside the div around the content */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 
-}
 
 
 .brand {
@@ -60,11 +55,20 @@ html, body {
     grid-row: 1;
     background-color: purple;
     padding: 10px;
-    font-size: 150px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     text-align: center;
 
+}
+
+.flex-body-column {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+    width: 100vw;       /* Width to cover the full viewport width */
+    /* border-right: 2px solid purple; */
+    /* border-left: 2px solid purple; */
 }
 
 

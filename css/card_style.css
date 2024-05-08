@@ -8,10 +8,10 @@
 /* card header is text */
 .card-header {
     color: black;
-    font-weight: 600;
-    font-size: larger;
+    font-weight: bold;
+    font-size: 20px;
     text-align: center;
-    font-size: 25px;
+  
 }
 
 .card-banner-image {

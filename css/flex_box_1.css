@@ -1,10 +1,9 @@
-
-.flex-body-column {
-    display: flex;
-    flex-direction: column;
-    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
-    width: 100vw;       /* Width to cover the full viewport width */
+.firstrow-text {
+    padding: 20px 20px;    /* Adds padding inside the div */
+    margin-right: 20px;    /* Adds a 10-pixel gap on the right side */
+    text-align: left;
 }
+
 
 .flex-container-row {
     display: flex;
@@ -23,21 +22,25 @@
 }
 
 .flex-first-row > div:first-child { /* Targeting the first child */
-    flex: 2; 
+    flex: 1; 
     text-align: right; 
-    margin-left: 40px;
+    /* margin-left: 40px; */
 
 }
 
 .flex-first-row > div:nth-child(2) { /* Targeting the second child */
-    flex:6;
+    flex:5;
     text-align: left; 
+    /* margin-right: 50px; */
+    padding: 10px 40px;    /* Adds padding inside the div */
+
    
 }
 
 .flex-first-row > div:last-child { /* Targeting the third child */
-    flex:2;
-    text-align: right; 
+    flex:4;
+    text-align: left; 
+    padding: 10px 20px;
 
 }
 
@@ -49,10 +52,10 @@
     margin: 0 auto;   /* Centers the div within its parent container */
     padding: 40px;    /* Adds space inside the div around the content */
     box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-    font-size: 60px;
+    font-size: 15px;
     font-display: bold;
-    margin-left: 60px;
-    margin-right: 60px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
 }
 
 .first-row-image {
@@ -74,6 +77,7 @@
     flex-direction: row;
     /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
     width: 70vw;       /* Width to cover the full viewport width */
+    margin-bottom: 5vw;
 }
 
 
