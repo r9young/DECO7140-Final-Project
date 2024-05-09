@@ -2,63 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Read More Example</title>
+    <title>Grid Layout with Responsive Images</title>
     <style>
-        #more-content {
-            display: none; /* Initially hide the rest of the content */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /* 12 equal-width columns */
+            gap: 10px; /* Optional spacing between grid items */
+            padding: 20px;
+            background-color: #f3f3f3;
         }
-        .read-more-btn {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
+
+        /* Example styles for grid items */
+        .item {
+            background-color: #800080; /* Purple color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .col-1 { grid-column: span 1; }
+        .col-2 { grid-column: span 2; }
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-5 { grid-column: span 5; }
+        .col-6 { grid-column: span 6; }
+        .col-7 { grid-column: span 7; }
+        .col-8 { grid-column: span 8; }
+        .col-9 { grid-column: span 9; }
+        .col-10 { grid-column: span 10; }
+        .col-11 { grid-column: span 11; }
+        .col-12 { grid-column: span 12; }
+
+        /* Responsive image styling */
+        .image {
+            width: 100%; /* Image fills the container width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
+
+        .text-content {
+            max-width: 400px; /* Adjust to desired width */
         }
     </style>
 </head>
 <body>
 
-    <h2>A Hopscotch Revival in Brisbane</h2>
-    <p>
-        In the quiet town of Brisbane, where children usually stayed indoors, glued to their screens, a surprising challenge was brewing. 
-        It all started with Mrs. Sue, a retired schoolteacher who noticed that her grandchildren were spending more and more time isolated, 
-        playing video games.
-    </p>
-    <div id="more-content">
-        <p>
-            One sunny afternoon, she invited her grandchildren, along with their friends, to try out an old game from her childhood—hopscotch. 
-            Initially skeptical, the kids were soon intrigued by the colorful chalk designs she drew on the sidewalk. Mrs. Lee explained the rules, 
-            and before long, they were eagerly tossing stones and hopping on one foot.
-        </p>
-        <p>
-            The physical nature of hopscotch, combined with the laughter and camaraderie it brought, was a stark contrast to the solitary hours 
-            spent in front of screens. The children began to enjoy the fresh air and the joy of playing together. As they played, Mrs. Lee subtly 
-            incorporated challenges that required teamwork and strategic thinking, skills they usually exercised in video games but now found 
-            in a real-world setting.
-        </p>
-        <p>
-            Word of this fun, engaging game spread through the neighborhood. Soon, parents were encouraging their children to join Mrs. Lee's 
-            hopscotch games instead of spending afternoons indoors. Every weekend, the sidewalks of Greenwood blossomed with colorful hopscotch 
-            grids, each more intricate than the last.
-        </p>
+    <div class="container">
+        <!-- Example grid items, you can add more with different spans -->
+        <div class="item col-12">Header - Full Width (12 Columns)</div>
+        <div class="item col-3">
+            <img class="image" src="image_1.png" alt="Game 1 Image">
+            <p>Game 1</p>
+        </div>
+        <div class="item col-9">Main Content (9 Columns)</div>
+        <div class="item col-6">Footer Section 1 (6 Columns)</div>
+        <div class="item col-6">Footer Section 2 (6 Columns)</div>
     </div>
-    <span class="read-more-btn" onclick="toggleContent()">Read More</span>
-
-    <script>
-        function toggleContent() {
-            var moreContent = document.getElementById("more-content");
-            var btnText = document.querySelector(".read-more-btn");
-
-            if (moreContent.style.display === "none") {
-                moreContent.style.display = "block";
-                btnText.innerText = "Read Less";
-            } else {
-                moreContent.style.display = "none";
-                btnText.innerText = "Read More";
-            }
-        }
-    </script>
 
 </body>
 </html>
-
-
-
