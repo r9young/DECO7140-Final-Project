@@ -1,9 +1,7 @@
-
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
     /* font-weight: bold; */
-    text-align: center; 
     margin-bottom: 30px;
     border-top: 2px solid purple;
     border-bottom: 2px solid purple;
@@ -107,6 +105,20 @@ article.aside-1 > section {
 
 }
 
+#more-content {
+    display: none; /* Initially hide this content */
+}
+
+
+
+.read-more-btn {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    display: block; /* This makes the button take up the whole line */
+    text-align: right; /* Aligns text within the block to the left */
+    margin-top: 10px; /* Optional margin to add spacing above */
+}
 
 @media all and (min-width: 600px) {
     /* We tell both sidebars to share a row */
@@ -123,6 +135,3 @@ article.aside-1 > section {
     .main    { order: 1; }
 }
 
-
-
-/* aside aside-1 */

@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="test.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Read More Example</title>
+    <style>
+        #more-content {
+            display: none; /* Initially hide the rest of the content */
+        }
+        .read-more-btn {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-        <div class="wrapper">
-            <header class="header">Header</header>
+    <h2>A Hopscotch Revival in Brisbane</h2>
+    <p>
+        In the quiet town of Brisbane, where children usually stayed indoors, glued to their screens, a surprising challenge was brewing. 
+        It all started with Mrs. Sue, a retired schoolteacher who noticed that her grandchildren were spending more and more time isolated, 
+        playing video games.
+    </p>
+    <div id="more-content">
+        <p>
+            One sunny afternoon, she invited her grandchildren, along with their friends, to try out an old game from her childhood—hopscotch. 
+            Initially skeptical, the kids were soon intrigued by the colorful chalk designs she drew on the sidewalk. Mrs. Lee explained the rules, 
+            and before long, they were eagerly tossing stones and hopping on one foot.
+        </p>
+        <p>
+            The physical nature of hopscotch, combined with the laughter and camaraderie it brought, was a stark contrast to the solitary hours 
+            spent in front of screens. The children began to enjoy the fresh air and the joy of playing together. As they played, Mrs. Lee subtly 
+            incorporated challenges that required teamwork and strategic thinking, skills they usually exercised in video games but now found 
+            in a real-world setting.
+        </p>
+        <p>
+            Word of this fun, engaging game spread through the neighborhood. Soon, parents were encouraging their children to join Mrs. Lee's 
+            hopscotch games instead of spending afternoons indoors. Every weekend, the sidewalks of Greenwood blossomed with colorful hopscotch 
+            grids, each more intricate than the last.
+        </p>
+    </div>
+    <span class="read-more-btn" onclick="toggleContent()">Read More</span>
 
-            <aside class="aside aside-1">Aside 1</aside>
-            
-            <article class="main">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
-            </article>
+    <script>
+        function toggleContent() {
+            var moreContent = document.getElementById("more-content");
+            var btnText = document.querySelector(".read-more-btn");
 
-            
-            
-            <aside class="aside aside-2">Aside 2</aside>
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                btnText.innerText = "Read Less";
+            } else {
+                moreContent.style.display = "none";
+                btnText.innerText = "Read More";
+            }
+        }
+    </script>
 
-            <footer class="footer">Footer</footer>
-        </div>
-        
-    </body>
+</body>
 </html>
-
 
 
 

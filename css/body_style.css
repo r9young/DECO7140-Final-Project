@@ -22,9 +22,26 @@ html, body {
 
     font-family: "Poppins", sans-serif;
     font-weight: 350;
-    justify-items: center;
-    
-    
+}
+
+h1 {
+
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+ 
+    color: purple;
+  
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+ 
+    color: purple;
+    padding: 10px 40px
 }
 
 .header {
@@ -51,7 +68,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh; 
+    /* min-height: 100vh;  */
 }
 
 
