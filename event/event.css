@@ -1,0 +1,36 @@
+label {
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 1rem;  /*rem?*/
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 0.5rem; 
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-check {
+    margin-bottom: 0.25rem;  /*????*/
+}
+
+.form-check-label {
+    display: inline !important;  /*????*/
+    margin-left: 0.5rem;       /*????*/
+}
+
+.m-2 {
+    margin: 2vh 2vw;
+}
+
