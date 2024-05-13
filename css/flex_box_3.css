@@ -129,10 +129,10 @@ article.aside-1 > section {
 /* flex: 1 0 0 allows the asides to grow and take up available space, but not to shrink. 
 /* This means when there's ample space within the row, they will sit side-by-side. */
 
-@media all and (min-width: 800px) {
+/*@media all and (min-width: 800px) {
     .main   { flex: 2 0px; } /*flex-grow: 3 (grow to fill extra space) flex-shrink:0 (can shrink if needed), flex-basis: 0px)*/
-    .aside-1   { flex: 2 0px; }
-    .aside-1 { order: 2; } /*flex-shrink: 1 allows them to shrink. see above*/
-    .main    { order: 1; }
-}
+    /* .aside-1   { flex: 2 0px; } */
+    /* .aside-1 { order: 2; } flex-shrink: 1 allows them to shrink. see above */
+    /* .main    { order: 1; } */
+/* } */
 

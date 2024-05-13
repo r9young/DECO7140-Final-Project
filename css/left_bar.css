@@ -20,11 +20,11 @@
 }
 
 .left-side-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto; 
-    justify-items: left;
-
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    
+    /* aligns items along the block (column) axis */
 }
 
 .flex-inputbox{
@@ -34,3 +34,158 @@
 
 
 
+
+
+.about-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:5;
+    grid-row-end: 7;
+    background-color: grey;
+    width: 75%;
+    border-radius: 10px;
+    margin-top: 5%
+}
+
+
+
+
+#subscribe-form {
+    width: 50%;
+    padding: 5%;
+    min-width: 10vw;
+}
+
+#subscribe-form > label {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+}
+
+#subscribe-form > input {
+    display:block;
+    width:50%;
+    margin-bottom: 1rem;
+    padding:.375rem .75rem;
+    font-size: 30px;
+    line-height: 1.0;
+    color:grey
+}
+
+.custom-background {
+    /* background-image: url('img/image_1.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    
+}
+
+.about-container {
+    display: flex;                 /* Enables flexbox for container layout */
+    flex-direction: column;        /* Makes the content flow vertically */
+    justify-content: center;       /* Centers content vertically */
+    align-items: center;           /* Centers content horizontally */
+    width: 100%;                   /* Makes container full-width */
+   
+    padding: 10px;
+    background: rgb(229, 179, 229);
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.form-group {
+    display: block;
+    margin-bottom: 1rem;  /*rem?*/
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+ 
+.aside-2 header {
+    font-size: 40px;
+    font-weight: none;
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid #333; */
+    padding: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f4f4f4; */
+}
+
+.flex-inputbox > label {
+    /* font-family: Arial, sans-serif; */
+    font-size: 12px;
+    font-weight: 600;
+    /* font-style: bold; */
+    /* margin-bottom: 0.5em; */
+    color: purple;
+    text-align: left;
+}
+
+#email {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+}
+
+#suburb {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+
+}
+
+#first-name {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+
+}
+
+.flex-inputbox > input {
+    display:block;
+    width:180px;
+    margin-bottom: 1rem;
+    padding:.375rem .75rem;
+    font-size: 12px;
+    line-height: 1.0;
+    color:purple
+}
+
+.flex-rightside-menu {
+    padding: 1px 1px;
+    background: rgb(229, 179, 229);
+    text-align: right !important;
+    padding: 0 30px;
+    font-size: 20px;
+    max-width: 250px;
+}
+
+ 
+.flex-rightside-menu .left-side-text {
+    text-align: justify; /* Example: center-aligning the <p> text */
+}

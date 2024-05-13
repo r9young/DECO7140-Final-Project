@@ -1,0 +1,38 @@
+.item-a {
+    grid-area: title;
+    background-color:aquamarine
+  }
+  .item-b {
+    grid-area: main;
+    background-color:blue
+  }
+  .item-c {
+    grid-area: sidebar-left;
+    background-color:yellow;
+  }
+
+  .item-d {
+    grid-area: footer;
+    background-color:purple
+  }
+  
+  .item-c {
+    grid-area: sidebar-right;
+    background-color:pink
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "title title title title title"
+      "title title title title title"
+      "sidebar-left main main main sidebar-right"
+      "sidebar-left main main main sidebar-right"
+      "footer footer footer footer footer"
+
+      ;
+    height:100vh;
+
+  }
