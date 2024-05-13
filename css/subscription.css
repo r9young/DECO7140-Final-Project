@@ -13,9 +13,9 @@
 
 
 #subscribe-form {
-    width: 90%;
+    width: 50%;
     padding: 5%;
-    min-width: 20vw;
+    min-width: 10vw;
 }
 
 #subscribe-form > label {
@@ -26,11 +26,11 @@
 
 #subscribe-form > input {
     display:block;
-    width:70%;
+    width:50%;
     margin-bottom: 1rem;
     padding:.375rem .75rem;
     font-size: 30px;
-    line-height: 1.5;
+    line-height: 1.0;
     color:grey
 }
 
@@ -92,4 +92,62 @@
     /* background-color: #f4f4f4; */
 }
 
+.flex-inputbox > label {
+    /* font-family: Arial, sans-serif; */
+    font-size: 12px;
+    font-weight: 600;
+    /* font-style: bold; */
+    /* margin-bottom: 0.5em; */
+    color: purple;
+    text-align: left;
+}
+
+#email {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+}
+
+#suburb {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+
+}
+
+#first-name {
+    width: 150px;
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+
+}
+
+.flex-inputbox > input {
+    display:block;
+    width:180px;
+    margin-bottom: 1rem;
+    padding:.375rem .75rem;
+    font-size: 12px;
+    line-height: 1.0;
+    color:purple
+}
+
+.flex-rightside-menu {
+    padding: 1px 1px;
+    background: rgb(229, 179, 229);
+    text-align: right !important;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+ 
+.flex-rightside-menu .left-side-text {
+    text-align: justify; /* Example: center-aligning the <p> text */
+}
 

@@ -39,10 +39,13 @@ h2 {
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
+    text-align: left;
  
     color: purple;
     padding: 10px 40px
 }
+
+
 
 .header {
     font-size: 25px;
@@ -74,6 +77,4 @@ h2 {
 .flex-first-row {
     flex-grow: 1;
 }
-
-
 

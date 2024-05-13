@@ -1,0 +1,36 @@
+/* .left-sider-bar {
+    display: none;
+}
+ */
+
+
+ .left-sider-bar h3 {
+    font-size: 15px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+
+}
+
+.left-side-text {
+    font-size: 12px;
+    font-style:italic;
+    text-align: left;
+    color:purple
+}
+
+.left-side-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; 
+    justify-items: left;
+
+}
+
+.flex-inputbox{
+    display: flex;
+    flex-direction: column;
+}
+
+
+

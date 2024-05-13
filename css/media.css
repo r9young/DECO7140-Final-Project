@@ -255,6 +255,16 @@
       
     }
 
+    .story-text {
+        font-size: 15px;
+        justify-content: space-around;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 40px;
+       
+       
+    }
+
     
 
 

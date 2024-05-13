@@ -1,0 +1,18 @@
+.flex-body {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-body > div:first-child {
+    flex: 1;
+}
+
+
+.flex-body > div:nth-child(2) { 
+    flex:7;
+}
+
+.flex-body > div:last-child { 
+    flex:2;
+}

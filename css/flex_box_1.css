@@ -47,7 +47,7 @@
 
 .first-row-text{
 
-    width: 90%;      /* Sets the width of the div to take 100% of its parent container's width */
+    width: 100%;      /* Sets the width of the div to take 100% of its parent container's width */
     max-width: auto; /* Ensures the div does not exceed 800px in width */
     min-height: auto; /* Ensures the div has at least 400px in height, expanding as needed based on content */
     margin: 0 auto;   /* Centers the div within its parent container */ /* Adds space inside the div around the content */
@@ -67,6 +67,11 @@
 
 }
 
-
+.first-row-text > p {
+    padding: 0px 40px ;  
+    /* margin-right: 20px;    Adds a 10-pixel gap on the right side */
+    /* text-align: left; */
+    text-align: justify;
+}
 /* --------------------------------------------- */
 

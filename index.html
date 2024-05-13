@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="css/manual_style.css">
         <link rel="stylesheet" href="css/story_img.css">
         <link rel="stylesheet" href="css/media.css">   
+        <!-- grid-main for the main body structure -->
+        <link rel="stylesheet" href="css/grid_main.css"> 
+        <link rel="stylesheet" href="css/left_bar.css"> 
+        <link rel="stylesheet" href="css/flex_box_body.css"> 
+        
+         
 
         <!-- butterfly kids -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +25,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
     
         <!-- Poppins Static-->
-
+ 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -45,9 +51,7 @@
             </aside>
         </div>
         
-            
-        
-        <div class="flex-first-row">
+        <div class="flex-body">
             <div class="flex-sider-bar" aria-label="Main menu">
                 <aside class="flex-side-menu">
                     <h1>Manual</h1>
@@ -61,11 +65,10 @@
             </div>
             
                 
-            <div class="flex-body-column">
-
+            <div class="body-container">
                 <div class="first-row-text">
-                    <h1 class="poppins-regular">Welcome to Game Beyond Screen</h1>
-                        <div class="story-text">
+                    <h2>Welcome to Game Beyond Screen</h2>
+                        <div class="first-row-text">
                             <p>Embark on a journey where fun transcends pixels and screens. At Game Beyond Screen, we celebrate the sheer joy of play in its most tangible forms. Dive into a world of board games, outdoor adventures, puzzles, and more, all designed to engage your mind, energize your body, and enhance your social interactions.</p>
                             <p>From strategic challenges that test your mental acuity to physical activities that get your heart racing, Game Beyond Screen is your portal to rediscovering the essence of play. Explore our extensive collection of games, participate in community events, and connect with fellow enthusiasts eager to share their love for classic and innovative games alike.</p>
                             <p>Whether you're looking for a tranquil afternoon with a puzzle, a competitive board game night, or an exhilarating outdoor game, Game Beyond Screen offers it all. Join us to break away from digital screens and celebrate the diversity of games that enrich our lives.</p>
@@ -76,73 +79,81 @@
 
             
                 <!-- <div class="wrapper-header">Popular Games ></div> -->
-                <h2>Popular Games ></h2>
-                <div class="flex-second-row">
-                    <div class="card">
-                        <h2 class="card-header">Hopscotch</h2>
-                        <img class="card-banner-image" src="img/image_1.png" alt="image">
-                        <p class="card-body-text"></p> 
+                <div class="second-row-text">
+                    <h2>Popular Games ></h2>
+                    <div class="flex-second-row">
+                        <div class="card">
+                            <h3 class="card-header">Hopscotch</h3>
+                            <img class="card-banner-image" src="img/image_1.png" alt="image">
+                            <p class="card-body-text"></p> 
+                        </div>
+                        <div class="card">
+                            <h3 class="card-header">Kite Flying</h3>
+                            <img class="card-banner-image" src="img/image_2.png" alt="image">
+                            <p class="card-body-text"></p> 
+                        </div>
+                        <div class="card">
+                            <h3 class="card-header">Kite Flying</h3>
+                            <img class="card-banner-image" src="img/image_5.png" alt="image">
+                            <p class="card-body-text"></p> 
+                        </div>
+                        <div class="card">
+                            <h3 class="card-header">Kite Flying</h3>
+                            <img class="card-banner-image" src="img/image_6.png" alt="image">
+                            <p class="card-body-text"></p> 
+                        </div>
                     </div>
-                    <div class="card">
-                        <h2 class="card-header">Kite Flying</h2>
-                        <img class="card-banner-image" src="img/image_2.png" alt="image">
-                        <p class="card-body-text"></p> 
-                    </div>
-                    <div class="card">
-                        <h2 class="card-header">Kite Flying</h2>
-                        <img class="card-banner-image" src="img/image_5.png" alt="image">
-                        <p class="card-body-text"></p> 
-                    </div>
-                    <div class="card">
-                        <h2 class="card-header">Kite Flying</h2>
-                        <img class="card-banner-image" src="img/image_6.png" alt="image">
-                        <p class="card-body-text"></p> 
-                    </div>
+    
+
+                </div>
+               
+                <!-- <div class="wrapper-header">User's Story ></div> -->
+                <div class="third-row-text">
+                    <h2>User's Story ></h2>
+                    <div class="wrapper">
+                        <a  class="main">
+                            <img class="wrapper_image" src="img/image_8.png" alt="image">
+                        </aside>
+                        <article class="aside-1" >
+                            <!-- <header>Story from Mrs. Lee</header> -->
+                            <section>
+                                <div>
+                                    <section class="flex-main-content main-content" aria-label="Main content">
+                                        <div class="centered-content">
+                                            <div class="text-content">
+                                                <h2>Sue Olivia</h2>
+                                                <p>Retired Schoolteacher | Grandmother</p>
+                                                <p>Brisbane, Australia</p>
+                                            </div>
+                                    </section>  
+                                    <div class="story-text">
+                                        <div>
+                                            <p>In the quiet town of Brisbane, where children usually stayed indoors, glued to their screens, a surprising challenge was brewing. It all started with Mrs. Sue, a retired schoolteacher who noticed that her grandchildren were spending more and more time isolated, playing video games.</p>
+                                        </div>
+                                            
+                                        <div id="more-content">
+                                            <p>One sunny afternoon, she invited her grandchildren, along with their friends, to try out an old game from her childhood—hopscotch. Initially skeptical, the kids were soon intrigued by the colorful chalk designs she drew on the sidewalk. Mrs. Lee explained the rules, and before long, they were eagerly tossing stones and hopping on one foot.</p>
+                                            <p>The physical nature of hopscotch, combined with the laughter and camaraderie it brought, was a stark contrast to the solitary hours spent in front of screens. The children began to enjoy the fresh air and the joy of playing together. As they played, Mrs. Lee subtly incorporated challenges that required teamwork and strategic thinking, skills they usually exercised in video games but now found in a real-world setting.</p>
+                                            <p>Word of this fun, engaging game spread through the neighborhood. Soon, parents were encouraging their children to join Mrs. Lee's hopscotch games instead of spending afternoons indoors. Every weekend, the sidewalks of Greenwood blossomed with colorful hopscotch grids, each more intricate than the last.</p>
+                                        </div>
+                                        <span class="read-more-btn" onclick="toggleContent()">Read More</span>   
+                                    </div>
+                                    <div class="button-position">
+                                        <button class="aside-button">Share your story with us!</button>
+                                    </div>  
+                                </div> 
+                            </section>    
+                        </article>
                 </div>
 
-                <!-- <div class="wrapper-header">User's Story ></div> -->
-                <h2>User's Story ></h2>
-                <div class="wrapper">
-                    <aside  class="main">
-                        <img class="wrapper_image" src="img/image_8.png" alt="image">
-                    </aside>
-                    <article class="aside-1" >
-                        <!-- <header>Story from Mrs. Lee</header> -->
-                        <section>
-                            <div>
-                                <section class="flex-main-content main-content" aria-label="Main content">
-                                    <div class="centered-content">
-                                        <div class="text-content">
-                                            <h2>Sue Olivia</h2>
-                                            <p>Retired Schoolteacher | Grandmother</p>
-                                            <p>Brisbane, Australia</p>
-                                        </div>
-                                </section>  
-                                <div class="story-text">
-                                    <div>
-                                        <p>In the quiet town of Brisbane, where children usually stayed indoors, glued to their screens, a surprising challenge was brewing. It all started with Mrs. Sue, a retired schoolteacher who noticed that her grandchildren were spending more and more time isolated, playing video games.</p>
-                                    </div>
-                                        
-                                    <div id="more-content">
-                                        <p>One sunny afternoon, she invited her grandchildren, along with their friends, to try out an old game from her childhood—hopscotch. Initially skeptical, the kids were soon intrigued by the colorful chalk designs she drew on the sidewalk. Mrs. Lee explained the rules, and before long, they were eagerly tossing stones and hopping on one foot.</p>
-                                        <p>The physical nature of hopscotch, combined with the laughter and camaraderie it brought, was a stark contrast to the solitary hours spent in front of screens. The children began to enjoy the fresh air and the joy of playing together. As they played, Mrs. Lee subtly incorporated challenges that required teamwork and strategic thinking, skills they usually exercised in video games but now found in a real-world setting.</p>
-                                        <p>Word of this fun, engaging game spread through the neighborhood. Soon, parents were encouraging their children to join Mrs. Lee's hopscotch games instead of spending afternoons indoors. Every weekend, the sidewalks of Greenwood blossomed with colorful hopscotch grids, each more intricate than the last.</p>
-                                    </div>
-                                    <span class="read-more-btn" onclick="toggleContent()">Read More</span>   
-                                </div>
-                                <div class="button-position">
-                                    <button class="aside-button">Share your story with us!</button>
-                                </div>  
-                            </div> 
-                        </section>    
-                    </article>
                 </div>
+                
 
                 <div class="bottom-bar">
                     <div>
                         <header>Subscribe </header>
                         
-                        <form >
+                        <form class="subscript-form">
                             <label for="first-name">First Name:</label>
                             <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
                             <label for="suburb">Suburb:</label> 
@@ -158,22 +169,33 @@
             </div> 
             
             
-            <div class="left-sider-bar">
-                <div>
-                    <header>Subscribe </header>
-                    <form >
+            <div class="flex-rightside-menu">
+                <h3>Stay in the Loop! 🌟 </h3>
+                <p class="left-side-text"> Don't miss out on the latest and greatest from us! Subscribe to our newsletter and be the first to know about exciting website updates, game releases, and upcoming events!</p>
+                <form class="left-side-container">
+
+                    <div class="flex-inputbox">
                         <label for="first-name">First Name:</label>
                         <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="flex-inputbox">
                         <label for="suburb">Suburb:</label> 
                         <input type="text" id="suburb" name="suburb" placeholder="Enter your suburb" required>
+                    </div>  
+
+                    <div class="flex-inputbox">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="flex-inputbox">
                         <input type="submit" value="Subscribe">
-                    </form>
-                </div>
+                    </div>    
+                </form>     
             </div>
-
         </div>
+
         <footer class="flex-footer-menu" aria-label="Main menu">
             <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
                 <img src="footer_img/icons8-home.png" alt="Home">
