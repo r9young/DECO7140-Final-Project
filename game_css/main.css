@@ -77,4 +77,16 @@ h2 {
         display:none;
     
     }
+
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
 }

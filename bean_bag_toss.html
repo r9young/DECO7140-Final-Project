@@ -34,7 +34,7 @@
 
        
 
-   
+        
    
     <body>
         
@@ -54,38 +54,71 @@
         </div>
 
         <div class="container">
-            <div class="item-a">Title</div>
+            <div class="item-a">Bean Bag Toss</div>
             <div class="item-b">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="game_video" width="656" height="450" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+
             <div class="item-c">Sidebar-right</div>
-            <div class="item-e">Sidebar-left</div>
-            <div class="item-d">Footer</div>
-           
+
+
+            <div class="item-d">
+                <p>Rule of Game</p>
+                <p>Players: Can be played with two or four players. In a four-player game, players form two teams. Team members stand at opposite boards on the same side.</p>
+                <p>Turns: Players take turns throwing bags. In singles play, players throw from the same board and then walk to the other side to continue play. In doubles play, teammates stand at opposite boards and remain in their designated lane for the whole game.</p>
+                <p>Scoring:</p>
+                <p>In-the-Hole: Bags that go through the hole on the board score 3 points.</p>
+                <p>On-the-Board: Bags that remain on the board and are not touching the ground score 1 point.</p>
+                <p>Cancellation Scoring: The points of one player cancel out the points of their opponent. For example, if Player A scores 6 points and Player B scores 4 points, Player A is awarded 2 points for that round.</p>
+                <p>Length of Game: The game continues until a player or team reaches or exceeds 21 points at the completion of an inning (when all bags have been thrown).</p>
+            </div>
+
+            <div class="item-f">
+                <h2>Daily Weather Forecast</h2>
+                <div id="weatherTableContainer"></div>
+            </div>
+
+            <div class="item-e">
+                <div class="flex-sider-bar" aria-label="Main menu">
+                    <aside class="flex-side-menu">
+                        <h1>Manual</h1>
+                        <div class="page-links">
+                            <a href="index.html" class="menu-button">Home</a>
+                            <a href="game.html" class="menu-button">Games</a>
+                            <a href="event.html" class="menu-button">Events</a>
+                            <a href="subscript.html" class="menu-button">Subscript</a>
+                        </div>
+                    </aside>
+                </div>
+                <footer class="flex-footer-menu" aria-label="Main menu">
+                    <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
+                        <img src="footer_img/icons8-home.png" alt="Home">
+                        <span>Home</span>
+                    </a>
+                    <a href="game.html" class="nav-link" aria-label="Design projects">
+                        <img src="footer_img/icons8-projects.png" alt="design">
+                        <span>Games</span>
+                    </a>
+                    <a href="event.html" class="nav-link" aria-label="Demostrations">
+                        <img src="footer_img/icons8-demo.png" alt="demo">
+                        <span>Events</span>
+                    </a>
+                    <a href="subscript.html" class="nav-link" aria-label="About Pete">
+                        <img src="footer_img/icons8-about.png" alt="about">
+                        <span>Subscript</span>
+                    </a>
+                </footer>
+            </div>
         </div>
+
+       
         
 
   
-        <footer class="flex-footer-menu" aria-label="Main menu">
-            <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
-                <img src="footer_img/icons8-home.png" alt="Home">
-                <span>Home</span>
-            </a>
-            <a href="game.html" class="nav-link" aria-label="Design projects">
-                <img src="footer_img/icons8-projects.png" alt="design">
-                <span>Games</span>
-            </a>
-            <a href="event.html" class="nav-link" aria-label="Demostrations">
-                <img src="footer_img/icons8-demo.png" alt="demo">
-                <span>Events</span>
-            </a>
-            <a href="subscript.html" class="nav-link" aria-label="About Pete">
-                <img src="footer_img/icons8-about.png" alt="about">
-                <span>Subscript</span>
-            </a>
-        </footer>
+        
     </body>
     <script src="js/more_content.js"></script>
+    <script src="js/weather_api.js"></script>
     
    
 </html>

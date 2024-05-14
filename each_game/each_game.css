@@ -1,38 +1,77 @@
 .item-a {
     grid-area: title;
-    background-color:aquamarine
+    /* background-color:aquamarine; */
+    height: 80%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .item-b {
     grid-area: main;
-    background-color:blue
+    /* background-color:blue */
   }
+
   .item-c {
-    grid-area: sidebar-left;
-    background-color:yellow;
+    grid-area: products;
+    background-color:pink
   }
 
   .item-d {
-    grid-area: footer;
-    background-color:purple
+    grid-area: right-side;
+    /* background-color:purple */
   }
-  
-  .item-c {
-    grid-area: sidebar-right;
-    background-color:pink
+
+
+  .item-e {
+    grid-area: left-side;
+    /* background-color:purple */
   }
+
+  .item-f {
+    grid-area: weather;
+    /* background-color:purple */
+    background-color:rgb(154, 154, 217)
+  }
+
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-      "title title title title title"
-      "title title title title title"
-      "sidebar-left main main main sidebar-right"
-      "sidebar-left main main main sidebar-right"
-      "footer footer footer footer footer"
-
+      "left-side title title right-side right-side"
+      "left-side main main right-side right-side"
+      "weather weather weather products products"
+      "weather weather weather products products"
+      "weather weather weather products products"
       ;
     height:100vh;
-
   }
+
+  .game_video {
+    grid-area: main;
+    /* width: 100%;
+    height: 100%; */
+    padding:20px 20px
+  }
+
+
+
+@media screen and (max-width: 430px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game_video {
+        width: 90%;
+        height: 90%;
+    }
+
+
+}
