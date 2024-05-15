@@ -54,15 +54,29 @@
         </div>
 
         <div class="container">
-            <div class="item-a">Bean Bag Toss</div>
+            <!-- <div class="item-a">
+           
+               
+            </div> -->
             <div class="item-b">
-                <iframe class="game_video" width="656" height="450" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="game_video" width="800" height="450" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
-            <div class="item-c">Sidebar-right</div>
+            <div class="item-a">
+                    <h2>Get It Here!</h2>
+                    <div>
+                        <img id="myImage" src="img_amzon/bean_bag_toss.png">
+                        <a href="https://amzn.to/4bgUgKR">Check out this link</a>
+                    </div>
+                   
+                        
+                    
+ 
+            </div>
 
 
             <div class="item-d">
+                <h2>Bin Bag Toss</h2>
                 <p>Rule of Game</p>
                 <p>Players: Can be played with two or four players. In a four-player game, players form two teams. Team members stand at opposite boards on the same side.</p>
                 <p>Turns: Players take turns throwing bags. In singles play, players throw from the same board and then walk to the other side to continue play. In doubles play, teammates stand at opposite boards and remain in their designated lane for the whole game.</p>
@@ -74,8 +88,23 @@
             </div>
 
             <div class="item-f">
-                <h2>Daily Weather Forecast</h2>
-                <div id="weatherTableContainer"></div>
+                <h2>Weather Today</h2>
+                <div class="weather-data">
+                    <p>Max Temporature</p>
+                    <div id="max_temperature"></div>
+                </div>
+                <div class="weather-data">
+                    <p>Min Temporature</p>
+                    <div id="min_temperature"></div>
+                </div>
+                <div class="weather-data">
+                    <p>Shower Sum</p>
+                    <div id="showers_sum"></div>
+                </div>
+                <div class="weather-data">
+                    <p>UV Index</p>
+                    <div id="uv_index"></div>
+                </div>
             </div>
 
             <div class="item-e">
@@ -118,7 +147,7 @@
         
     </body>
     <script src="js/more_content.js"></script>
-    <script src="js/weather_api.js"></script>
+    <script src="js/daily_weather.js"></script>
     
    
 </html>

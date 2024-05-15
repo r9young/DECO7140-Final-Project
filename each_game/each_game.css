@@ -1,54 +1,90 @@
-.item-a {
-    grid-area: title;
-    /* background-color:aquamarine; */
-    height: 80%;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    color: purple;
-    display: flex;
-    justify-content: center;
+
+  .item-a {
+    grid-area: goods;
+    /* background-color:red */
+    display:flex;
+    flex-direction: column;
     align-items: center;
   }
+
+  .item-a img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .item-a > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+
 
   .item-b {
     grid-area: main;
     /* background-color:blue */
+   
   }
+
+
 
   .item-c {
     grid-area: products;
-    background-color:pink
+    /* background-color:pink; */
   }
+
+  
 
   .item-d {
     grid-area: right-side;
     /* background-color:purple */
+    padding: 20px 20px
   }
 
+  .item-d > h2 {
+    text-align: center;
+  }
 
   .item-e {
     grid-area: left-side;
+    width: 70%;
+
     /* background-color:purple */
   }
 
   .item-f {
     grid-area: weather;
     /* background-color:purple */
-    background-color:rgb(154, 154, 217)
+    /* background-color:rgb(154, 154, 217); */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+  }
+
+  .item-f > div{
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .item-f > h2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-      "left-side title title right-side right-side"
-      "left-side main main right-side right-side"
-      "weather weather weather products products"
-      "weather weather weather products products"
-      "weather weather weather products products"
+      "left-side main main main weather weather"
+      "left-side main main main weather weather"
+      "right-side right-side right-side right-side  weather weather"
+      "right-side right-side right-side right-side goods goods"
+      "right-side right-side right-side right-side goods goods"
       ;
     height:100vh;
   }
@@ -58,6 +94,13 @@
     /* width: 100%;
     height: 100%; */
     padding:20px 20px
+  }
+
+  
+
+  .weather-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
 
@@ -73,5 +116,11 @@
         height: 90%;
     }
 
+}
 
+@media screen and (max-width: 1195px)
+ {
+  .flex-footer-menu {
+    display: none;
+  }
 }
