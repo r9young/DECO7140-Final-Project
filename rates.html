@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rate our page</title>
+        <link rel="stylesheet" href="css/body_style.css">
+        <link rel="stylesheet" href="css/form_style.css">
+        <link rel="stylesheet" href="event/event.css">
+        <link rel="stylesheet" href="rates_css/rates.css">
+        <!-- butterfly kids -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+    
+        <!-- Poppins Static-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-grid">
+            <div class="placeholder col-12 row-1"></div>
+            <div class="placeholder col-12 row-2"></div>
+            <div class="placeholder col-12 row-3"></div>
+           
+    
+            <div class="centered">
+                <form action="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/api/?format=api" method="post" enctype="multipart/form-data">
+                    <div>
+                        <h3>Rate the Last Page You Reviewed</h3>
+                        <p>We value your feedback! Please rate the previous page you reviewed and let us know your thoughts.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="five-stars" value="5">
+                            <label class="form-check-label" for="five-stars">5 Stars</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="four-stars" value="4">
+                            <label class="form-check-label" for="four-stars">4 Stars</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="two-stars" value="2">
+                            <label class="form-check-label" for="two-stars">2 Stars</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="one-star" value="1">
+                            <label class="form-check-label" for="one-star">1 Star</label>
+                        </div>   
+                    </div>
+                </form>
+            </div>
+    
+            
+            <div class="placeholder col-12 row-9"></div>
+            <div class="placeholder col-12 row-10"></div>
+            <div class="placeholder col-12 row-11"></div>
+            <div class="placeholder col-12 row-12"></div>
+        </div>
+    </body>
+        
+</html>

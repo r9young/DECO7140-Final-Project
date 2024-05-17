@@ -22,6 +22,7 @@ fetch(urlWithParams, requestOptions)
         // Extract the daily weather data from the response
         const weather = data.daily;
         console.log(weather);
+
         // Update the DOM elements with the data
         const temperatureElement = document.getElementById("max_temperature");
         temperatureElement.innerText = weather.temperature_2m_max + "°C";
@@ -29,11 +30,47 @@ fetch(urlWithParams, requestOptions)
         const rainElement = document.getElementById("min_temperature");
         rainElement.innerText = weather.temperature_2m_min + "°C";
 
-        const windspeedElement = document.getElementById("uv_index");
-        windspeedElement.innerText = weather.uv_index_max + "";
+        const uvIndexElement = document.getElementById("uv_index");
+        uvIndexElement.innerText = weather.uv_index_max + "";
 
-        const  cloudcoverElement= document.getElementById("showers_sum");
-        cloudcoverElement.innerText = weather.showers_sum + " mm";
+        const showersElement = document.getElementById("showers_sum");
+        showersElement.innerText = weather.showers_sum + " mm";
 
+        // Generate and display suggestions
+        const suggestionsElement = document.getElementById("suggestions");
+        const suggestions = generateWeatherSuggestions(weather);
+        suggestionsElement.innerText = suggestions;
     })
     .catch(error => console.log('Error:', error)); // Log any errors that occur
+
+//------------------------------------------------------------------//
+
+// Function to generate weather suggestions
+function generateWeatherSuggestions(weatherData) {
+    let suggestions = '';
+
+    // Extract necessary weather data
+    const tempMax = weatherData.temperature_2m_max[0]; // Maximum temperature for the day in °C
+    const tempMin = weatherData.temperature_2m_min[0]; // Minimum temperature for the day in °C
+    const uvIndexMax = weatherData.uv_index_max[0]; // Maximum UV index for the day
+    const showersSum = weatherData.showers_sum[0]; // Total showers for the day in mm
+
+    // Example logic for generating suggestions
+    if (tempMax > 30) {
+        suggestions += 'It is quite hot today. Consider wearing light clothing and staying hydrated. ';
+    }
+
+    if (uvIndexMax > 5) {
+        suggestions += 'The UV index is high today. Make sure to wear sunscreen and protective clothing. ';
+    }
+
+    if (showersSum > 0) {
+        suggestions += 'It looks like it will rain today. Don’t forget to bring an umbrella ☔️. ';
+    }
+
+    if (suggestions === '') {
+        suggestions = 'The weather looks fine today. No special precautions needed.';
+    }
+
+    return suggestions;
+}

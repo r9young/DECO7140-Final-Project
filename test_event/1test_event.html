@@ -1,0 +1,70 @@
+<!-- 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        .body-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /* Creates 12 proportional columns */
+            grid-template-rows: repeat(12, 1fr); /* Creates 12 proportional rows */
+            gap: 16px; /* Gap between columns - best in absolute value */
+            margin: 2vh 2vw; /* Adds space on all sides proportional to the screen size */
+        }
+
+
+        .centered {
+            grid-column: 5 / span 4; /* Starts at column 5 and spans 4 columns (5, 6, 7, 8) */
+            grid-row: 5 / span 3;    /* Starts at row 5 and spans 4 rows (5, 6, 7, 8) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional: add background color for visibility */
+        }
+
+        /* Placeholder for empty rows and columns */
+        .placeholder {
+            background-color: black; /* Optional: can be removed or styled */
+        }
+    </style>
+</head>
+<body>
+    <div class="body-grid">
+        <div class="placeholder grid-row: 1 / span 12"></div>
+        <div class="placeholder col-12 row-2"></div>
+        <div class="placeholder col-12 row-3"></div>
+        <div class="placeholder col-12 row-4"></div>
+        <div class="centered">
+            <form action="https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/api/?format=api" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Rate the Last Page You Reviewed</label>
+                    <p>We value your feedback! Please rate the previous page you reviewed and let us know your thoughts.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rating" id="five-stars" value="5">
+                        <label class="form-check-label" for="five-stars">5 Stars</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rating" id="four-stars" value="4">
+                        <label class="form-check-label" for="four-stars">4 Stars</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rating" id="two-stars" value="2">
+                        <label class="form-check-label" for="two-stars">2 Stars</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rating" id="one-star" value="1">
+                        <label class="form-check-label" for="one-star">1 Star</label>
+                    </div>   
+                </div>
+            </form>
+        </div>
+        <div class="placeholder col-12 row-8"></div>
+        <div class="placeholder col-12 row-9"></div>
+        <div class="placeholder col-12 row-10"></div>
+        <div class="placeholder col-12 row-11"></div>
+        <div class="placeholder col-12 row-12"></div>
+    </div>
+</body>
+</html>

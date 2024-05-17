@@ -18,6 +18,10 @@
     align-items: center;  
   }
 
+  .item-a a:hover {
+    color: #0056b3;
+  }
+
 
 
   .item-b {
@@ -48,31 +52,78 @@
   .item-e {
     grid-area: left-side;
     width: 70%;
+    align-items: center;
+    text-align: center;
+    
 
     /* background-color:purple */
   }
 
   .item-f {
     grid-area: weather;
-    /* background-color:purple */
-    /* background-color:rgb(154, 154, 217); */
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    align-items: left;
+    text-align: center;
+    margin: 30px;
+    background-color: rgb(229, 179, 229);
     
   }
 
-  .item-f > div{
-    display:flex;
+  .item-f > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
+   
+    
+  
   }
 
-  .item-f > h2 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  .item-f > p {
+    margin: 30px;
+    text-align: left;
+    
+    
   }
+
+  .item-f > div > h2 {
+    font-size: large;
+    text-align: center;
+  }
+
+  .item-f > div > div > p {
+    font-style: italic;
+    font-weight: 600;
+
+  }
+  
+
+  .item-f > div:last-child {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    text-align: left;
+    margin: 0 20px 20px 20px;
+    
+  }
+
+  .item-f > div:last-child > h2 {
+    text-align: center;
+    font-size: larger;
+  }
+
+  .item-f > div:last-child > div {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+ 
+
+  
+
+  
+
 
 
   .container {
@@ -81,8 +132,8 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "left-side main main main weather weather"
-      "left-side main main main weather weather"
-      "right-side right-side right-side right-side  weather weather"
+      "left-side main main main suggest suggest"
+      "right-side right-side right-side right-side  goods goods"
       "right-side right-side right-side right-side goods goods"
       "right-side right-side right-side right-side goods goods"
       ;
@@ -98,11 +149,7 @@
 
   
 
-  .weather-data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
+ 
 
 
 @media screen and (max-width: 430px) {
