@@ -1,0 +1,33 @@
+.about-item-3 {
+    display: flex;
+    flex-direction: column; /* Changed to column for better form layout */
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+   
+}
+
+.about-item-3 > div > label {
+    color: black !important;
+}
+
+#subscribe-form {
+    width: 90%;
+    padding: 5%;
+}
+
+#subscribe-form > label {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+#subscribe-form > input {
+    display: block;
+    width: 80%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+
+}

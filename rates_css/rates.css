@@ -1,52 +1,53 @@
 html, body {
-    height: 100%;
+    height: auto;
+    width: auto;
     margin: 0;
-    padding: 0;
+    padding: 20px 20px 20px 20px;
+
 }
 
 .body-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /* Creates 12 proportional columns */
-    grid-template-rows: repeat(12, 1fr); /* Creates 12 proportional rows */
-    gap: 16px; /* Gap between columns and rows */
-    margin: 2vh 2vw; /* Adds space on all sides proportional to the screen size */
-    height: 96vh; /* Adjusts to use full viewport height minus margins */
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    grid-column: span 12; /* Spans all 12 columns */
-}
-
-.row-1 { grid-row: 1 / span 1; }
-.row-2 { grid-row: 2 / span 1; }
-.row-3 { grid-row: 3 / span 1; }
-.row-4 { grid-row: 4 / span 1; }
-.row-5 { grid-row: 5 / span 1; }
-.row-6 { grid-row: 6 / span 1; }
-.row-7 { grid-row: 7 / span 1; }
-.row-8 { grid-row: 8 / span 1; }
-.row-9 { grid-row: 9 / span 1; }
-.row-10 { grid-row: 10 / span 1; }
-.row-11 { grid-row: 11 / span 1; }
-.row-12 { grid-row: 12 / span 1; }
-
-.centered {
-    grid-column: 3 / span 7; /* Starts at column 5 and spans 4 columns (5, 6, 7, 8) */
-    grid-row: 4 / span 5;    /* Starts at row 5 and spans 3 rows (5, 6, 7) */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center;     /* Center content vertically */
-    /* background-color: #f0f0f0; Optional: add background color for visibility */
-    width: 100%;
+    flex-direction: column;
     height: 100%;
-    font-size: 15px;
-    font-weight: 600;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 20px 20px 20px 20px;
+    width: 100%;
+    
 }
+
+
+
+.vote {
+    padding: 10px;
+    margin:10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+
+}
+
+
+
+.result > div {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height:400px
+    
+}
+
+.summary_result {
+    border: 1px solid black;
+    border-radius: 5px;
+    height:fit-content
+
+}
+
+
 
 .placeholder {
 
@@ -65,4 +66,20 @@ h3 {
     font-weight: 600;
     color: black;
     text-align: left;
+}
+
+/* .flex-form {
+    display:flex;
+    flex-direction: row;
+} */
+
+@media screen and (max-width: 430px) {
+    .result {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .result > div {
+        flex: 1 1 100%; /* Default to full width */
+    }
 }

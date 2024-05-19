@@ -1,25 +1,23 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Selects all radio buttons with name="stars"
     const radioButtons = document.querySelectorAll('input[name="stars"]');
-
-    // Adds a change event listener to each radio button
     radioButtons.forEach(radio => {
         radio.addEventListener('change', handleInputChange);
     });
+
+    document.getElementById('summarizeBtn').addEventListener('click', fetchRatingsSummary);
 });
 
 const handleInputChange = (event) => {
     event.preventDefault();
-
     let selectedRating = parseInt(document.querySelector('input[name="stars"]:checked').value, 10);
     let responseMessage = document.getElementById("response_message");
 
     let payload = {
-        "five_stars": selectedRating === 5 ? 1 : 0,
-        "four_stars": selectedRating === 4 ? 1 : 0,
-        "three_stars": selectedRating === 3 ? 1 : 0,
-        "two_stars": selectedRating === 2 ? 1 : 0,
-        "one_star": selectedRating === 1 ? 1 : 0
+        "five_stars": selectedRating === 5 ? 10 : 0,
+        "four_stars": selectedRating === 4 ? 10 : 0,
+        "three_stars": selectedRating === 3 ? 10 : 0,
+        "two_stars": selectedRating === 2 ? 10 : 0,
+        "one_star": selectedRating === 1 ? 10 : 0
     };
 
     const url = "https://r9youngfirstapi-74b464a64841.herokuapp.com/api/starts/";
@@ -46,7 +44,8 @@ const handleInputChange = (event) => {
     });
 };
 
-const fetchRatingsSummary = async () => {
+const fetchRatingsSummary = async (event) => {
+    event.preventDefault();
     const url = "https://r9youngfirstapi-74b464a64841.herokuapp.com/api/starts/";
     
     try {
@@ -85,9 +84,11 @@ const fetchRatingsSummary = async () => {
         document.getElementById('two_stars_summary').innerText = summary.two_stars;
         document.getElementById('one_star_summary').innerText = summary.one_star;
         
+        updateChart(summary);
+        
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
 };
 
-document.getElementById('summarizeBtn').addEventListener('click', fetchRatingsSummary);
+
