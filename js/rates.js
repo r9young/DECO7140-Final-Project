@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Selects all radio buttons with name="stars"
+    const radioButtons = document.querySelectorAll('input[name="stars"]');
+
+    // Adds a change event listener to each radio button
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', handleInputChange);
+    });
+});
+
 const handleInputChange = (event) => {
     event.preventDefault();
 
@@ -80,5 +90,4 @@ const fetchRatingsSummary = async () => {
     }
 };
 
-document.getElementById('rateform').addEventListener('submit', handleInputChange);
 document.getElementById('summarizeBtn').addEventListener('click', fetchRatingsSummary);
