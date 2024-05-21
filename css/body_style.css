@@ -69,10 +69,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100vh;  */
 }
 
 .flex-first-row {
     flex-grow: 1;
 }
 
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+}

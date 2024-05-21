@@ -2,9 +2,6 @@
 .flex-second-row {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center ; */
-    /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
-    /*width: 70vw;       /* Width to cover the full viewport width */
     gap: 10px;
 }
 
