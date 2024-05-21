@@ -164,15 +164,28 @@
 }
 
 .flex-rightside-menu {
-    padding: 1px 1px;
+   
     background: rgb(229, 179, 229);
     text-align: right !important;
-    padding: 0 30px;
     font-size: 20px;
-    max-width: 250px;
+    width: 100%;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-left:10px;
 }
 
+.flex-rightside-menu > h3 {
+    text-align: center;
+}
+
+.flex-rightside-menu > p {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+
+}
  
 .flex-rightside-menu .left-side-text {
     text-align: justify; /* Example: center-aligning the <p> text */
+
 }

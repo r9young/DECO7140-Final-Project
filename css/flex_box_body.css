@@ -15,4 +15,5 @@
 
 .flex-body > div:last-child { 
     flex:2;
+    padding: 10px 10px 10px 10px;
 }

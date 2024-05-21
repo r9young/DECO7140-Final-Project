@@ -114,6 +114,11 @@
     
     }
 
+    .flex-rightside-menu {
+        display: none;
+    
+    }
+
     
 }
 
@@ -122,6 +127,11 @@
 
     .flex-header-menu {
         display:block;
+    }
+
+    .flex-rightside-menu {
+        display: none;
+    
     }
 
 
@@ -201,6 +211,11 @@
 @media only screen and (min-width: 1195px) {
     .flex-header-bar {
         display:none;
+    }
+
+    .flex-rightside-menu {
+       
+        display: block;
     }
 
     .flex-sider-bar {

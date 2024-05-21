@@ -13,11 +13,11 @@ const handleInputChange = (event) => {
     let responseMessage = document.getElementById("response_message");
 
     let payload = {
-        "five_stars": selectedRating === 5 ? 10 : 0,
-        "four_stars": selectedRating === 4 ? 10 : 0,
-        "three_stars": selectedRating === 3 ? 10 : 0,
-        "two_stars": selectedRating === 2 ? 10 : 0,
-        "one_star": selectedRating === 1 ? 10 : 0
+        "five_stars": selectedRating === 5 ? 1 : 0,
+        "four_stars": selectedRating === 4 ? 1 : 0,
+        "three_stars": selectedRating === 3 ? 1 : 0,
+        "two_stars": selectedRating === 2 ? 1 : 0,
+        "one_star": selectedRating === 1 ? 1 : 0
     };
 
     const url = "https://r9youngfirstapi-74b464a64841.herokuapp.com/api/starts/";
