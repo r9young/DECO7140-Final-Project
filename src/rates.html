@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rate our page</title>
+         <link rel="stylesheet" href="css/body_style.css">
+        <link rel="stylesheet" href="css/subscription.css">
+        <link rel="stylesheet" href="css/flex_box_1.css">
+        <link rel="stylesheet" href="css/flex_box_3.css">
+        <link rel="stylesheet" href="css/flex_box_2.css">
+        <link rel="stylesheet" href="css/manual_style.css">
+        <link rel="stylesheet" href="css/story_img.css">
+        <link rel="stylesheet" href="css/media.css">   
+        <!-- grid-main for the main body structure -->
+        <link rel="stylesheet" href="css/grid_main.css"> 
+        <link rel="stylesheet" href="css/left_bar.css"> 
+        <link rel="stylesheet" href="css/flex_box_body.css"> 
+        
+        <link rel="stylesheet" href="css/body_style.css">
+        <link rel="stylesheet" href="css/form_style.css">
+        <link rel="stylesheet" href="event/event.css">
+        <link rel="stylesheet" href="rates_css/rates.css">
+        <!-- butterfly kids -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+    
+        <!-- Poppins Static-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div>
+            <div class="brand">Game Beyong Screen</div>
+        </div>
+
+        <div class="flex-header-bar" aria-label="Main menu">
+            <aside class="flex-header-menu">
+                <div class="page-header-links">
+                    <a href="index.html" class="menu-button">Home</a>
+                    <a href="game.html" class="menu-button">Games</a>
+                    <a href="subscript.html" class="menu-button">Subscript</a>
+                    <a href="rates.html" class="menu-button">Rate</a>
+                   
+                </div>
+            </aside>
+        </div>
+        
+        
+        <div class="rate-main">
+
+           
+          
+            <div class="flex-sider-bar" aria-label="Main menu">
+                <aside class="flex-side-menu">
+                    <h1>Manual</h1>
+                    <div class="page-links">
+                        <a href="index.html" class="menu-button">Home</a>
+                        <a href="game.html" class="menu-button">Games</a>
+                        <a href="subscript.html" class="menu-button">Subscript</a>
+                        <a href="rates.html" class="menu-button">Rate</a>
+                    </div>
+                </aside>
+            </div>
+           
+    
+            <div class="body-grid">
+                <div class="centered flex-form vote">
+                    <div>
+                        <form id="rateform" method="post" enctype="multipart/form-data">
+                            <h3>Rate Our Website</h3>
+                            <p>We value your feedback! Please rate below!</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="stars" id="five-stars" value="5">
+                                <label class="form-check-label" for="five-stars">5 Stars 🌟🌟🌟🌟🌟</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="stars" id="four-stars" value="4">
+                                <label class="form-check-label" for="four-stars">4 Stars 🌟🌟🌟🌟</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="stars" id="three-stars" value="3">
+                                <label class="form-check-label" for="three-stars">3 Stars 🌟🌟🌟</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="stars" id="two-stars" value="2">
+                                <label class="form-check-label" for="two-stars">2 Stars 🌟🌟</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="stars" id="one-star" value=1>
+                                <label class="form-check-label" for="one-star">1 Star 🌟</label>
+                            </div>
+                            <button id="summarizeBtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="result">
+    
+                        <div id="summary_result">
+                            <h3>Summary of Scores:</h3>
+                            <p>One Star: <span id="one_star_summary"></span></p>
+                            <p>Two Stars: <span id="two_stars_summary"></span></p>
+                            <p>Three Stars: <span id="three_stars_summary"></span></p>
+                            <p>Four Stars: <span id="four_stars_summary"></span></p>
+                            <p>Five Stars: <span id="five_stars_summary"></span></p>
+                        </div>
+    
+                        <div>
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                            <canvas id="ratingChart" width="600" height="300"></canvas>
+                        </div>
+                </div>
+
+        </div>
+
+        <footer class="flex-footer-menu" aria-label="Main menu">
+            <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
+                <img src="footer_img/icons8-home.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a href="game.html" class="nav-link" aria-label="Design projects">
+                <img src="footer_img/icons8-projects.png" alt="design">
+                <span>Games</span>
+            </a>
+            <a href="rates.html" class="nav-link" aria-label="Demostrations">
+                <img src="footer_img/icons8-demo.png" alt="demo">
+                <span>Rate</span>
+            </a>
+            <a href="subscript.html" class="nav-link" aria-label="About Pete">
+                <img src="footer_img/icons8-about.png" alt="about">
+                <span>Subscript</span>
+            </a>
+        </footer>
+       
+       
+        <script src="js/rates.js"></script>
+        <script src="js/rate_chart.js"></script>
+    </body>
+    
+</html>

@@ -124,4 +124,57 @@ form button {
     /* width: 600px; */
 }
 
+@media screen and (max-width: 430px) {
+    .flex-header-menu {
+        display:none;
+    }
 
+    .flex-footer-menu {
+        display:block;
+        width: auto;
+        
+        
+    }
+
+
+    .rate-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .result {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .flex-header-menu {
+        display:block;
+    }
+
+    .flex-rightside-menu {
+        display: none;
+    
+    }
+
+    .flex-footer-menu{
+        display:none;
+    }
+}
+
+
+@media only screen and (min-width: 1195px) {
+
+    
+    .flex-header-menu {
+        display:block;
+    }
+
+    .flex-sider-bar {
+        display:block;
+    }
+
+}
