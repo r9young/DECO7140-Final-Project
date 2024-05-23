@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Game Beyong Screen</title>
+        <title>Game Beyond Screen</title>
         <link rel="stylesheet" href="css/body_style.css">
         <link rel="stylesheet" href="css/subscription.css">
         <link rel="stylesheet" href="css/flex_box_1.css">
@@ -12,65 +12,45 @@
         <link rel="stylesheet" href="css/manual_style.css">
         <link rel="stylesheet" href="css/story_img.css">
         <link rel="stylesheet" href="css/media.css">   
-        <!-- grid-main for the main body structure -->
         <link rel="stylesheet" href="css/grid_main.css"> 
         <link rel="stylesheet" href="css/left_bar.css"> 
         <link rel="stylesheet" href="css/flex_box_body.css">
         <link rel="stylesheet" href="each_game/each_game.css">
-
-        
-         
-
-        <!-- butterfly kids -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
-    
-        <!-- Poppins Static-->
- 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-       
-
-        
-   
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    </head>
     <body>
-        
         <div>
-            <div class="brand">Game Beyong Screen</div>
+            <div class="brand" aria-label="Website brand">Game Beyond Screen</div>
         </div>
         
         <div class="flex-header-bar" aria-label="Main menu">
             <aside class="flex-header-menu">
                 <div class="page-header-links">
-                    <a href="index.html" class="menu-button">Home</a>
-                    <a href="game.html" class="menu-button">Games</a>
-                    <a href="event.html" class="menu-button">Events</a>
-                    <a href="subscript.html" class="menu-button">Subscript</a>
+                    <a href="index.html" class="menu-button" aria-label="Home page">Home</a>
+                    <a href="game.html" class="menu-button" aria-label="Games page">Games</a>
+                    <a href="event.html" class="menu-button" aria-label="Events page">Events</a>
+                    <a href="subscript.html" class="menu-button" aria-label="Subscription page">Subscribe</a>
                 </div>
             </aside>
         </div>
 
         <div class="container">
-            <!-- <div class="item-a">
-           
-               
-            </div> -->
             <div class="item-b">
-                <iframe class="game_video" width="800" height="450" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="game_video" width="800" height="450" src="https://www.youtube.com/embed/ZTZWwqdX0DU?si=tw7VMF1N4vqtkkH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen aria-label="Game video"></iframe>
             </div>
 
             <div class="item-e">
-                <div class="flex-sider-bar" aria-label="Main menu">
+                <div class="flex-sider-bar" aria-label="Sidebar menu">
                     <aside class="flex-side-menu">
                         <h1>Manual</h1>
                         <div class="page-links">
-                            <a href="index.html" class="menu-button">Home</a>
-                            <a href="game.html" class="menu-button">Games</a>
-                            <a href="event.html" class="menu-button">Events</a>
-                            <a href="subscript.html" class="menu-button">Subscript</a>
+                            <a href="index.html" class="menu-button" aria-label="Home page">Home</a>
+                            <a href="game.html" class="menu-button" aria-label="Games page">Games</a>
+                            <a href="event.html" class="menu-button" aria-label="Events page">Events</a>
+                            <a href="subscript.html" class="menu-button" aria-label="Subscription page">Subscribe</a>
                         </div>
                     </aside>
                 </div>
@@ -79,14 +59,13 @@
             <div class="item-a">
                 <h2>Get It Here!</h2>
                 <div>
-                    <img id="myImage" src="img_amzon/bean_bag_toss.png">
-                    <a href="https://amzn.to/4bgUgKR">Check out this link</a>
+                    <img id="myImage" src="img_amzon/bean_bag_toss.png" alt="Bean Bag Toss image" aria-label="Bean Bag Toss image">
+                    <a href="https://amzn.to/4bgUgKR" aria-label="Link to Amazon product">Check out this link</a>
                 </div>
             </div>
 
-
             <div class="item-d">
-                <h2>Bin Bag Toss</h2>
+                <h2>Bean Bag Toss</h2>
                 <p>Rule of Game</p>
                 <p>Players: Can be played with two or four players. In a four-player game, players form two teams. Team members stand at opposite boards on the same side.</p>
                 <p>Turns: Players take turns throwing bags. In singles play, players throw from the same board and then walk to the other side to continue play. In doubles play, teammates stand at opposite boards and remain in their designated lane for the whole game.</p>
@@ -103,65 +82,52 @@
                 </div>
                 <div>
                     <div>
-                        <p>Max Temporature</p>
-                        <div id="max_temperature"></div>
+                        <p>Max Temperature</p>
+                        <div id="max_temperature" aria-label="Maximum temperature"></div>
                     </div>
                     <div>
-                        <p>Min Temporature</p>
-                        <div id="min_temperature"></div>
+                        <p>Min Temperature</p>
+                        <div id="min_temperature" aria-label="Minimum temperature"></div>
                     </div>
                 </div>
 
                 <div>
                     <div>
                         <p>Shower Sum</p>
-                        <div id="showers_sum"></div>
+                        <div id="showers_sum" aria-label="Shower sum"></div>
                     </div>
                     
                     <div>
                         <p>UV Index</p>
-                        <div id="uv_index"></div>
+                        <div id="uv_index" aria-label="UV index"></div>
                     </div>
                 </div>
                 <div>
                     <h2>Weather Suggestions</h2>
-                    <div id="suggestions"></div>
+                    <div id="suggestions" aria-label="Weather suggestions"></div>
                 </div>
             </div>
 
-           
-
-          
-            
-
-            <footer class="flex-footer-menu" aria-label="Main menu">
-                <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
-                    <img src="footer_img/icons8-home.png" alt="Home">
+            <footer class="flex-footer-menu" aria-label="Footer menu">
+                <a href="index.html" class="nav-link" aria-label="Home page">
+                    <img src="footer_img/icons8-home.png" alt="Home icon">
                     <span>Home</span>
                 </a>
-                <a href="game.html" class="nav-link" aria-label="Design projects">
-                    <img src="footer_img/icons8-projects.png" alt="design">
+                <a href="game.html" class="nav-link" aria-label="Games page">
+                    <img src="footer_img/icons8-projects.png" alt="Games icon">
                     <span>Games</span>
                 </a>
-                <a href="event.html" class="nav-link" aria-label="Demostrations">
-                    <img src="footer_img/icons8-demo.png" alt="demo">
+                <a href="event.html" class="nav-link" aria-label="Events page">
+                    <img src="footer_img/icons8-demo.png" alt="Events icon">
                     <span>Events</span>
                 </a>
-                <a href="subscript.html" class="nav-link" aria-label="About Pete">
-                    <img src="footer_img/icons8-about.png" alt="about">
-                    <span>Subscript</span>
+                <a href="subscript.html" class="nav-link" aria-label="Subscription page">
+                    <img src="footer_img/icons8-about.png" alt="Subscription icon">
+                    <span>Subscribe</span>
                 </a>
             </footer>
         </div>
-
-       
-        
-
-  
-        
     </body>
     <script src="js/more_content.js"></script>
     <script src="js/daily_weather.js"></script>
-    
-   
 </html>

@@ -1,4 +1,23 @@
 
+body {
+  margin:auto
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "left-side main main main weather weather"
+    "left-side main main main suggest suggest"
+    "right-side right-side right-side right-side  goods goods"
+    "right-side right-side right-side right-side goods goods"
+    "right-side right-side right-side right-side goods goods"
+    ;
+  height:100vh;
+}
+
   .item-a {
     grid-area: goods;
     /* background-color:red */
@@ -42,7 +61,8 @@
   .item-d {
     grid-area: right-side;
     /* background-color:purple */
-    padding: 20px 20px
+    padding: 20px 20px;
+    margin-left: 20px;
   }
 
   .item-d > h2 {
@@ -126,19 +146,6 @@
 
 
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "left-side main main main weather weather"
-      "left-side main main main suggest suggest"
-      "right-side right-side right-side right-side  goods goods"
-      "right-side right-side right-side right-side goods goods"
-      "right-side right-side right-side right-side goods goods"
-      ;
-    height:100vh;
-  }
 
   .game_video {
     grid-area: main;
@@ -148,7 +155,31 @@
   }
 
   
+  @media screen and (min-width: 601px) and (max-width: 1194px) {
 
+    /* .item-f {
+      height: 300px;
+    }  */
+
+    .item-d {
+      align-items: left;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "main main main main main main"
+        "main main main main main main"
+        "right-side right-side right-side right-side  weather weather"
+        "right-side right-side right-side right-side weather weather"
+        "goods goods goods goods weather weather"
+        ;
+      height:100vh;
+    }
+
+  }
  
 
 
@@ -163,6 +194,11 @@
         height: 90%;
     }
 
+
+    .item-f {
+      display: none;
+    } 
+
 }
 
 @media screen and (max-width: 1195px)
@@ -170,4 +206,5 @@
   .flex-footer-menu {
     display: none;
   }
+
 }

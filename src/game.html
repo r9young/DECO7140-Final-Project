@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Game Beyong Screen</title>
+        <title>Game Beyond Screen</title>
         <link rel="stylesheet" href="css/body_style.css">
         <link rel="stylesheet" href="css/form_style.css">
         <link rel="stylesheet" href="css/flex_box_1.css">
@@ -19,99 +19,87 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
     
-        <!-- Poppins Static-->
-
+        <!-- Poppins Static -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-       
-
-   
-   
+        <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    </head>
     <body>
 
         <div>
-            <div class="brand">Game Beyong Screen</div>
+            <div class="brand" aria-label="Website brand">Game Beyond Screen</div>
         </div>
         
         <div class="flex-header-bar" aria-label="Main menu">
             <aside class="flex-header-menu">
                 <div class="page-header-links">
-                    <a href="index.html" class="menu-button">Home</a>
-                    <a href="game.html" class="menu-button">Games</a>
-                    <a href="subscript.html" class="menu-button">Subscript</a>
-                    <a href="rates.html" class="menu-button">Rates</a>
+                    <a href="index.html" class="menu-button" aria-label="Home page">Home</a>
+                    <a href="game.html" class="menu-button" aria-label="Games page">Games</a>
+                    <a href="subscript.html" class="menu-button" aria-label="Subscribe page">Subscribe</a>
+                    <a href="rates.html" class="menu-button" aria-label="Rates page">Rates</a>
                 </div>
             </aside>
-            <select id="filtergame">
+            <label for="filtergame" class="sr-only">Filter games by category</label>
+            <select id="filtergame" aria-label="Filter games">
                 <option value="">All</option>
                 <option value="familygame">Family Game</option>
                 <option value="groupgame">Group Game</option>
             </select>
         </div>
 
-            <div class="container">
-                <!-- Example grid items, you can add more with different spans -->
-                <div class="item col-6" data-type="groupgame">
-                    <img class="image" src="img/image_2.png" >
-                    <a href="bean_bag_toss.html">Bean Bag Toss</a>
-                    <p>Bean Bag Toss, also known as Cornhole, is a classic outdoor game that brings players of all ages together for friendly competition and fun. The game involves two raised platforms, each with a circular hole near the top. Players take turns tossing bean bags from a distance, aiming to land them on the platform or, for maximum points, through the hole.</p>
-                </div>
-                
-                <div class="item col-6" data-type="familygame">
-                    <img class="image" src="img/image_1.png" >
-                    <a href="bean_bag_toss.html">Hopscotch</a>
-                    <p>Hopscotch is a traditional playground game that has entertained children for generations. Played on a series of numbered squares drawn on the ground, it combines agility, balance, and strategic thinking.</p>
-                </div>
-                <div class="item col-3" data-type="familygame">
-                    <img class="image" src="img/image_3.png" >
-                    <a href="bean_bag_toss.html">Kite Flying</a>
-                    <p>Kite flying is a timeless outdoor activity that brings joy to people of all ages. With vibrant colors and unique designs soaring high in the sky, it evokes a sense of freedom and playfulness.
-
-                    </p>
-                </div>
-                <div class="item col-9" data-type="groupgame">
-                    <img class="image" src="img/image_4.png" >
-                    <h2>Frisbee Fun</h2> 
-                    <p>Playing frisbee is a classic way for kids and adults to come together for some outdoor fun. With just a flying disc, a group of friends, and an open space, you can enjoy an active and joyful game that encourages teamwork and physical fitness.</p>
-                </div>
-                <div class="item col-6" data-type="groupgame">
-                    <img class="image" src="img/image_6.png" >
-                    <h2>Spikeball</h2>
-                    <p>Spikeball (or Roundnet) is an exhilarating team sport that combines elements of volleyball and four square. Played on a small circular net with a ball, it requires agility, speed, and strategic thinking. Teams of two compete to spike the ball onto the net and prevent their opponents from returning it.</p>
-                </div>
-                <div class="item col-6" data-type="familygame">
-                    <img class="image" src="img/image_7.png" >
-                    <h2>Croquet</h2>
-                    <p>Croquet is a classic outdoor game that combines skill, strategy, and patience. Played on a grass lawn with mallets, balls, and hoops (called wickets), players aim to navigate their balls through a series of wickets and hit the final stake.</p>
-                </div>
+        <div class="container">
+            <div class="item col-6" data-type="groupgame">
+                <img class="image" src="img/image_2.png" alt="Image of Bean Bag Toss game">
+                <a href="bean_bag_toss.html">Bean Bag Toss</a>
+                <p>Bean Bag Toss, also known as Cornhole, is a classic outdoor game that brings players of all ages together for friendly competition and fun. The game involves two raised platforms, each with a circular hole near the top. Players take turns tossing bean bags from a distance, aiming to land them on the platform or, for maximum points, through the hole.</p>
             </div>
-
-
+            
+            <div class="item col-6" data-type="familygame">
+                <img class="image" src="img/image_1.png" alt="Image of Hopscotch game">
+                <a href="bean_bag_toss.html">Hopscotch</a>
+                <p>Hopscotch is a traditional playground game that has entertained children for generations. Played on a series of numbered squares drawn on the ground, it combines agility, balance, and strategic thinking.</p>
+            </div>
+            <div class="item col-3" data-type="familygame">
+                <img class="image" src="img/image_3.png" alt="Image of Kite Flying game">
+                <a href="bean_bag_toss.html">Kite Flying</a>
+                <p>Kite flying is a timeless outdoor activity that brings joy to people of all ages. With vibrant colors and unique designs soaring high in the sky, it evokes a sense of freedom and playfulness.</p>
+            </div>
+            <div class="item col-9" data-type="groupgame">
+                <img class="image" src="img/image_4.png" alt="Image of Frisbee Fun game">
+                <h2>Frisbee Fun</h2> 
+                <p>Playing frisbee is a classic way for kids and adults to come together for some outdoor fun. With just a flying disc, a group of friends, and an open space, you can enjoy an active and joyful game that encourages teamwork and physical fitness.</p>
+            </div>
+            <div class="item col-6" data-type="groupgame">
+                <img class="image" src="img/image_6.png" alt="Image of Spikeball game">
+                <h2>Spikeball</h2>
+                <p>Spikeball (or Roundnet) is an exhilarating team sport that combines elements of volleyball and four square. Played on a small circular net with a ball, it requires agility, speed, and strategic thinking. Teams of two compete to spike the ball onto the net and prevent their opponents from returning it.</p>
+            </div>
+            <div class="item col-6" data-type="familygame">
+                <img class="image" src="img/image_7.png" alt="Image of Croquet game">
+                <h2>Croquet</h2>
+                <p>Croquet is a classic outdoor game that combines skill, strategy, and patience. Played on a grass lawn with mallets, balls, and hoops (called wickets), players aim to navigate their balls through a series of wickets and hit the final stake.</p>
+            </div>
         </div>
 
-        <footer class="flex-footer-menu" aria-label="Main menu">
+        <footer class="flex-footer-menu" aria-label="Footer menu">
             <a href="index.html" class="nav-link" aria-label="Home page" aria-current="page">
-                <img src="footer_img/icons8-home.png" alt="Home">
+                <img src="footer_img/icons8-home.png" alt="Home icon">
                 <span>Home</span>
             </a>
-            <a href="game.html" class="nav-link" aria-label="Design projects">
-                <img src="footer_img/icons8-projects.png" alt="design">
+            <a href="game.html" class="nav-link" aria-label="Games page">
+                <img src="footer_img/icons8-projects.png" alt="Games icon">
                 <span>Games</span>
             </a>
-            <a href="subscript.html" class="nav-link" aria-label="About Pete">
-                <img src="footer_img/icons8-about.png" alt="about">
-                <span>Subscript</span>
+            <a href="subscript.html" class="nav-link" aria-label="Subscribe page">
+                <img src="footer_img/icons8-about.png" alt="Subscribe icon">
+                <span>Subscribe</span>
             </a>
-            <a href="rates.html" class="nav-link" aria-label="Demostrations">
-                <img src="footer_img/icons8-demo.png" alt="demo">
+            <a href="rates.html" class="nav-link" aria-label="Rates page">
+                <img src="footer_img/icons8-demo.png" alt="Rates icon">
                 <span>Rates</span>
             </a>
         </footer>
     </body>
     <script src="js/more_content.js"></script>
     <script src="js/filter.js"></script>
-    
-   
 </html>
