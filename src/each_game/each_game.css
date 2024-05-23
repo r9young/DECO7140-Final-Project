@@ -138,14 +138,6 @@ body {
     margin-left: 20px;
   }
 
- 
-
-  
-
-  
-
-
-
 
   .game_video {
     grid-area: main;
@@ -177,6 +169,11 @@ body {
         "goods goods goods goods weather weather"
         ;
       height:100vh;
+    }
+
+    .game_video {
+      width: 750px;
+      height: 300px;
     }
 
   }
