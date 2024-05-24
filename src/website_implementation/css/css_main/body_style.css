@@ -1,0 +1,82 @@
+
+
+/* Color Theme Swatches in RGBA */
+:root {
+    --Illustration-1-rgba: rgba(110, 72, 191, 1);
+    --Illustration-2-rgba: rgba(111, 114, 2, 1); 
+    --Illustration-3-rgba: rgba(242, 202, 4, 1); 
+    --Illustration-4-rgba: rgba(242, 135, 4, 1); 
+    --Illustration-5-rgba: rgba(242, 80, 21, 1); 
+}
+
+
+/* it is not used in current page */
+body{
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgb(230, 206, 230);
+} 
+
+
+html, body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+}
+
+h1 {
+
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: purple;
+  
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color: purple;
+    padding: 10px 40px
+}
+
+
+
+.header {
+    font-size: 25px;
+}
+
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.brand {
+    background-color: purple;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.flex-body-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-first-row {
+    flex-grow: 1;
+}
+
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+}
