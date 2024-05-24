@@ -1,0 +1,350 @@
+
+
+@media screen and (max-width: 430px) {
+
+    .flex-header-bar {
+        display:none;
+    }
+    .flex-sider-bar {
+        display:none;
+    }
+
+    .flex-footer-bar{
+        display:block;
+    }
+    
+    .left-sider-bar {
+        display:none;
+    
+    }
+
+    .flex-first-row {
+        margin-left:none;
+        /* padding: 0 0 0 0 ; */
+        flex-grow: 1;
+        flex:1;
+        padding: 10px;
+        margin-top: 10px;
+     
+    }
+
+  
+    
+
+    .flex-second-row-main {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-right: 120px;
+    }
+
+    .story-text {
+        width: 80vw;
+     
+    }
+
+
+  
+   
+    .first-row-text {
+        /* display: flex;
+        flex-direction: column; */
+        width: 70vw;
+        text-align: left;
+        margin-right: 120px;
+        /* margin-bottom: 5vw;
+        font-size: 10px; */
+    }
+
+    .flex-footer-menu {
+        display: grid;/* applied, making it a grid container */
+        grid-template-columns: repeat(4, 1fr);/* creates 4 columns */
+        justify-items: center;/* aligns items along the inline (row) axis */
+        align-items: center; /* aligns items along the block (column) axis */
+        padding: 2vh 5vw; /* applies to all sides of the element's content area: */
+        text-align: center; /*centre aligns the icon and the text */
+        width: 90vw;
+       
+        
+    }
+
+    .flex-footer-menu img {
+        width: 15vw;/* set the width of each icon to 15% of the screen */
+        height: auto;
+        min-width: 24px;
+        max-width: 50px;
+       
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        margin-bottom: 5vw;
+        margin-right: 20px
+    }
+
+    .wrapper img {
+        width: 80vw;
+    }
+
+    .brand {
+        width: 100vw;
+    
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .card-banner-image {
+        display: block;
+        margin:auto;
+        width: 95%;
+        height: 25vh;
+        object-fit:cover;
+        border-radius: 10px;
+    
+    }
+
+    .flex-rightside-menu {
+        display: none;
+    
+    }
+
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .flex-header-menu {
+        display:block;
+    }
+
+    .flex-rightside-menu {
+        display: none;
+    
+    }
+
+
+    .flex-header-bar {
+        display:block;
+    }
+    .flex-sider-bar {
+        display:none;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .bottom-bar {
+        display:block;
+    }
+
+    .left-sider-bar {
+        display:none;
+    
+    }
+
+
+    .img {
+        width: 70vw;
+    }
+
+    .flex-footer-menu{
+        display:none;
+    }
+
+    .flex-first-row {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+
+    .flex-body-column {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper img {
+        width: 60vw;
+    }
+
+    .bottom-bar {
+        display:block;
+    
+    }
+
+
+    .left-sider-bar {
+        display: none;
+    }
+
+    .body {
+        overflow-y: hidden;
+        width: 70vw;
+    }
+
+ 
+
+}
+
+@media only screen and (min-width: 1195px) {
+    .flex-header-bar {
+        display:none;
+    }
+
+    .flex-rightside-menu {
+       
+        display: block;
+    }
+
+    .flex-sider-bar {
+        display:block;
+    }
+
+    .flex-side-menu {
+        display: block;
+    }
+
+    .left-sider-bar {
+        display:block;
+    
+    }
+
+    .bottom-bar {
+        display:none;
+    }
+
+    .flex-footer-menu{
+        display:none;
+    }
+
+
+    .flex-body-column {
+  
+        /* width: 70vw; */
+        margin-bottom: 5vw;
+    
+    }
+
+    .wrapper {
+        width: 65vw;
+        margin-bottom: 5vw;
+        margin-left: 40px;
+
+    }
+
+    .wrapper img {
+        width: 30vw;
+    }
+
+    .card-banner-image {
+        width: 12vw;
+        height: 15vw;
+    }
+
+    .flex-second-row {
+        display: flex;
+        flex-wrap: wrap;
+  
+      
+    }
+
+    .story-text {
+        font-size: 15px;
+        justify-content: space-around;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 40px;
+       
+       
+    }
+
+    
+
+
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1194px) {
+    .flex-header-bar {
+        display:block;
+    }
+
+
+    .flex-sider-bar {
+        display:block;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .left-sider-bar {
+        display:block;
+    
+    }
+
+    .bottom-bar {
+        display:none;
+    }
+
+    .flex-footer-menu{
+        display:none;
+    }
+
+    .flex-first-row {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .flex-body-column {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .wrapper img {
+        width: 60vw;
+    }
+
+    .bottom-bar {
+        display:block;
+    
+    }
+
+    .left-sider-bar {
+        display: none;
+    }
+}

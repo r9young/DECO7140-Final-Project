@@ -1,0 +1,115 @@
+
+.flex-second-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+
+
+.card {
+    border: 1px solid var(--dark2);
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px var(--midgrey);
+}
+
+/* card header is text */
+.card-header {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+  
+}
+
+.card-banner-image {
+    /* display: block; */
+    margin:auto;
+    width: 30vh;
+    height: 30vh;
+    object-fit:cover;
+    border-radius: 10px;
+
+}
+
+/* card-body-text is text */
+.card-body-text {
+    color: black
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1194px) {
+    .card-banner-image {
+        /* display: block; */
+        margin:auto;
+        width: 20vh;
+        height: 20vh;
+        object-fit:cover;
+        border-radius: 10px;
+    
+    }
+
+    .flex-second-row {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center ; */
+        /*min-height: 100vh;  /* Minimum height to cover the full viewport height */
+        /*width: 70vw;       /* Width to cover the full viewport width */
+        gap: 10px;
+        margin-left: 40px;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .card-banner-image {
+        /* display: block; */
+        margin:auto;
+        width: 20vh;
+        height: 20vh;
+        object-fit:cover;
+        border-radius: 10px;
+        margin-left: 25px;
+    
+    }
+    
+    .flex-second-row {
+        gap: 10px;
+        margin-left: 40px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1195px) {
+
+    .card-banner-image {
+        /* display: block; */
+        margin:auto;
+        width: 25vh;
+        height: 25vh;
+        object-fit:cover;
+        border-radius: 10px;
+        gap: 20px
+    }
+
+
+    .card {
+        border: 1px solid var(--dark2);
+        border-radius: 10px;
+        box-shadow: 5px 10px 50px var(--midgrey);
+        padding: 20px;
+    }
+
+    .flex-second-row {
+        gap: 10px;
+        /* margin-left: 40px; */
+    }
+    
+}

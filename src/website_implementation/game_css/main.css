@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal-width columns */
+    grid-template-rows: auto; /* Adjust row height based on content */
+    gap: 10px; /* Optional spacing between grid items */
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+/* Example styles for grid items */
+.item {
+    background-color: #800080; /* Purple color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.col-1 {grid-column: span 1;}
+.col-2 {grid-column: span 2;}
+.col-3 {grid-column: span 3;}
+.col-4 {grid-column: span 4;}
+.col-5 {grid-column: span 5;}
+.col-6 {grid-column: span 6;}
+.col-7 {grid-column: span 7;}
+.col-8 {grid-column: span 8;}
+.col-9 {grid-column: span 9;}
+.col-10 {grid-column: span 10;}
+.col-11 {grid-column: span 11;}
+.col-12 {grid-column: span 12;}
+
+
+a {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.image {
+    float: left;
+    width: 100%; /* Image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.text-content {
+    max-width: 400px; /* Adjust to desired width */
+}
+
+
+@media only screen and (min-width: 1195px) {
+  
+    .flex-header-menu {
+        display:block;
+    }
+
+
+    .flex-header-bar {
+        display:block;
+    }
+    .flex-sider-bar {
+        display:none;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .bottom-bar {
+        display:block;
+    }
+
+    .left-sider-bar {
+        display:none;
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+}

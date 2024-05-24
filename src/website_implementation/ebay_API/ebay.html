@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBay Product Display</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="product-container"></div>
+
+  <script>
+    const itemId = '175529209276'; // Replace with the actual item ID
+    const url = `https://api.ebay.com/buy/browse/v1/item/${itemId}`;
+
+    const options = {
+      method: 'GET',
+      url: url,
+      headers: {
+        'Authorization': 'Bearer YOUR_PRODUCTION_OAUTH_TOKEN',
+        'Content-Type': 'application/json'
+      }
+    };
+
+    axios.request(options).then(function (response) {
+      const item = response.data;
+      // Extract necessary details
+      const productImage = item.image.imageUrl;
+      const productPrice = item.price.value;
+      const productCurrency = item.price.currency;
+      const productTitle = item.title;
+
+      // Display the item details on your website
+      const productHTML = `
+        <div>
+          <img src="${productImage}" alt="${productTitle}">
+          <h2>${productTitle}</h2>
+          <p>Price: ${productPrice} ${productCurrency}</p>
+          <a href="https://www.ebay.com/itm/${itemId}" target="_blank">View on eBay</a>
+        </div>
+      `;
+
+      document.getElementById('product-container').innerHTML = productHTML;
+    }).catch(function (error) {
+      console.error(error);
+    });
+  </script>
+</body>
+</html>
+
+
